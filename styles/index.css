@@ -5,15 +5,7 @@
 #wlcm {
     font-size: 60px;
     font-weight: 600;
-}
-
-#thrd {
-    font-size: 30px;
-    margin-top: 20px;
-}
-
-#thrd a {
-    color: white;
+    margin-bottom: 20px;
 }
 
 .announcement {
@@ -25,9 +17,14 @@
     border: 7px solid white;
 }
 
+.announcement a {
+    color: white;
+}
+
 #os {
     display: block;
-    margin: 30px auto;
+    margin: 20px auto;
+    margin-bottom: 0;
     width: 15%;
 }
 
