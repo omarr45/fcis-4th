@@ -151,7 +151,7 @@ footer {
         margin-left: -100%;
         display: block;
         font-size: 32px;
-        transition: 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     }
     #click:checked~ul li a {
         margin-left: 0px;
