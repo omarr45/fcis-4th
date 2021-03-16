@@ -1,0 +1,25 @@
+#oops {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+#pnf {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+#pnf a {
+    color: white;
+}
+
+#errorImg {
+    margin: 0 auto;
+    width: 45%;
+}
+
+@media (max-width: 500px) {
+    #errorImg {
+        width: 100%;
+    }
+}
