@@ -9,6 +9,7 @@
 
 #thrd {
     font-size: 30px;
+    margin-top: 20px;
 }
 
 #thrd a {
@@ -28,4 +29,20 @@
     display: block;
     margin: 30px auto;
     width: 15%;
+}
+
+@media (max-width: 600px) {
+    #wlcm {
+        font-size: 40px;
+    }
+    .announcement {
+        font-size: 18px;
+        border: 4px solid white;
+    }
+    #thrd {
+        font-size: 18px;
+    }
+    #os {
+        width: 50%;
+    }
 }
