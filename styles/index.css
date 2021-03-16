@@ -1,0 +1,31 @@
+.content {
+    animation: fromUp 1.2s;
+}
+
+#wlcm {
+    font-size: 60px;
+    font-weight: 600;
+}
+
+#thrd {
+    font-size: 30px;
+}
+
+#thrd a {
+    color: white;
+}
+
+.announcement {
+    background: #0078E3;
+    margin: 1.5% 5%;
+    padding: 15px;
+    border-radius: 15px;
+    font-size: 30px;
+    border: 7px solid white;
+}
+
+#os {
+    display: block;
+    margin: 30px auto;
+    width: 15%;
+}
