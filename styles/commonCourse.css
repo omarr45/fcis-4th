@@ -1,0 +1,86 @@
+.accordion {
+    background-color: #eee;
+    color: #333;
+    cursor: pointer;
+    padding: 18px;
+    font-size: 22px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+.active,
+.accordion:hover {
+    background-color: #ccc;
+    color: black;
+}
+
+.panel {
+    padding: 0 18px;
+    color: black;
+    background-color: white;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.panel p {
+    padding: 10px 0;
+}
+
+button {
+    margin-top: 5px;
+}
+
+.accordion:after {
+    content: '+';
+    font-size: 22px;
+    float: right;
+}
+
+.activeBut:after {
+    content: '-';
+}
+
+.fixed {
+    background: #0078E3;
+    color: white;
+}
+
+.hdrs {
+    text-align: left;
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+
+.hdrs .course {
+    font-size: 60px;
+    font-weight: 900;
+}
+
+.hdrs .prof {
+    font-size: 26px;
+    font-style: italic;
+}
+
+@media (max-width: 1200px) {
+    .hdrs .course {
+        font-size: 36px;
+    }
+    .hdrs .prof {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 500px) {
+    .hdrs {
+        text-align: center;
+        margin: 0;
+        margin-bottom: 25px;
+    }
+}
