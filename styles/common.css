@@ -169,6 +169,9 @@ footer {
         transition: 0.3s;
         transition-timing-function: ease-in-out;
     }
+    .content {
+        min-height: calc(100vh - 220px);
+    }
     footer {
         font-size: 10px;
     }
