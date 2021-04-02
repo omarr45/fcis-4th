@@ -31,8 +31,17 @@
 #thrd,
 #thrd a {
     font-size: 20px;
-    margin-top: 40px;
+    margin-top: 30px;
     color: white;
+}
+
+#issues {
+    margin-top: 30px;
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    animation: fromDown 1.5s;
 }
 
 @media (max-width: 600px) {
@@ -51,5 +60,9 @@
     }
     #os {
         width: 50%;
+    }
+    #issues {
+        margin-top: 40px;
+        font-size: 14px;
     }
 }
