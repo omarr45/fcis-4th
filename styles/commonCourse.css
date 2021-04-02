@@ -51,6 +51,11 @@ button {
     color: white;
 }
 
+.fixed:hover {
+    background: #0460b1;
+    color: white;
+}
+
 .hdrs {
     text-align: left;
     margin-bottom: 30px;
