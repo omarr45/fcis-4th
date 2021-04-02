@@ -10,11 +10,11 @@
 
 .announcement {
     background: #0078E3;
-    margin: 1.5% 5%;
+    margin: 1.5% 15%;
     padding: 15px;
     border-radius: 15px;
     font-size: 30px;
-    border: 7px solid white;
+    border: 6px solid white;
 }
 
 .announcement a {
@@ -26,6 +26,13 @@
     margin: 20px auto;
     margin-bottom: 0;
     width: 15%;
+}
+
+#thrd,
+#thrd a {
+    font-size: 20px;
+    margin-top: 40px;
+    color: white;
 }
 
 @media (max-width: 600px) {
