@@ -67,9 +67,12 @@ button {
     font-weight: 900;
 }
 
-.hdrs .prof {
+.hdrs .prof,
+.hdrs .prof a {
     font-size: 26px;
     font-style: italic;
+    text-decoration: none;
+    color: white;
 }
 
 @media (max-width: 1200px) {
