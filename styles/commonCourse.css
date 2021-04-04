@@ -86,6 +86,7 @@ button {
 
 .panel i {
     margin-right: 10px;
+    color: #0078E3;
 }
 
 @media (max-width: 1200px) {
