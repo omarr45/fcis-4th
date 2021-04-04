@@ -75,6 +75,19 @@ button {
     color: white;
 }
 
+.panel {
+    font-size: 18px;
+}
+
+.panel p {
+    padding: 0px 5px;
+    margin: 15px 0px;
+}
+
+.panel i {
+    margin-right: 10px;
+}
+
 @media (max-width: 1200px) {
     .hdrs .course {
         font-size: 36px;
