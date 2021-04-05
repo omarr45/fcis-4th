@@ -105,4 +105,14 @@ button {
         margin: 0;
         margin-bottom: 25px;
     }
+    .content {
+        padding: 15px;
+    }
+    .panel p {
+        padding: 0px;
+        margin: 20px 0px;
+    }
+    .panel i {
+        margin-right: 10px;
+    }
 }
