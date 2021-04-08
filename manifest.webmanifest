@@ -1,0 +1,52 @@
+{
+    "short_name": "FCIS 2023",
+    "name": "FCIS 2023 - 4th Semester",
+    "icons": [{
+            "src": "assets/icon-128.png",
+            "type": "image/png",
+            "sizes": "128x128"
+        },
+        {
+            "src": "assets/icon-512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ],
+    "start_url": "/index.html",
+    "background_color": "#18293b",
+    "scope": "/",
+    "display": "standalone",
+    "theme_color": "#0078E3",
+    "description": "Welcome to FCIS 2023, where you can find all the materials you want",
+    "shortcuts": [{
+            "name": "Data Structures",
+            "description": "View (Data Structures) course materials",
+            "url": "/ds.html",
+            "icons": [{ "src": "/assets/icon-128.png", "sizes": "128x128" }]
+        },
+        {
+            "name": "Artificial Intelligence",
+            "description": "View (Artificial Intelligence) course materials",
+            "url": "/ai.html",
+            "icons": [{ "src": "/assets/icon-128.png", "sizes": "128x128" }]
+        },
+        {
+            "name": "Linear Algebra",
+            "description": "View (Linear Algebra) course materials",
+            "url": "/li.html",
+            "icons": [{ "src": "/assets/icon-128.png", "sizes": "128x128" }]
+        },
+        {
+            "name": "Computer Architecture",
+            "description": "View (Computer Architecture) course materials",
+            "url": "/ca.html",
+            "icons": [{ "src": "/assets/icon-128.png", "sizes": "128x128" }]
+        },
+        {
+            "name": "Operations Research",
+            "description": "View (Operations Research) course materials",
+            "url": "/or.html",
+            "icons": [{ "src": "/assets/icon-128.png", "sizes": "128x128" }]
+        }
+    ]
+}
