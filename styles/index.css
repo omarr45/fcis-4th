@@ -6,11 +6,22 @@
     font-size: 60px;
     font-weight: 600;
     margin-bottom: 20px;
+    margin: 0 50px;
+}
+
+.zeena {
+    position: absolute;
+    top: 80px;
+    left: 5%;
+}
+
+#fanoos {
+    width: 40px;
 }
 
 .announcement {
     background: #0078E3;
-    margin: 1.5% 15%;
+    margin: 2.5% 15%;
     padding: 15px;
     border-radius: 15px;
     font-size: 30px;
@@ -37,6 +48,19 @@
     color: white;
 }
 
+#hilal-div {
+    position: absolute;
+    margin: 0 16%;
+    left: 0;
+}
+
+#hilal {
+    width: 50px;
+    position: relative;
+    top: 20px;
+    left: 2px;
+}
+
 #issues {
     margin-top: 30px;
     text-align: center;
@@ -46,14 +70,32 @@
     animation: fromDown 1.5s;
 }
 
+@media (max-width: 1000px) {
+    #hilal {
+        left: 4px;
+    }
+}
+
 @media (max-width: 600px) {
     #wlcm {
         font-size: 40px;
+        margin: 0 10px;
+    }
+    #fanoos {
+        width: 26px;
     }
     .announcement {
         font-size: 18px;
         border: 3px solid white;
-        margin: 2.5% 5%;
+        margin: 3.5% 5%;
+    }
+    #hilal-div {
+        margin: 0 6%;
+        left: 0;
+    }
+    #hilal {
+        top: 0;
+        left: 15px;
     }
     #thrd,
     #thrd a {
@@ -62,9 +104,10 @@
     }
     #os {
         width: 50%;
+        margin-top: 30px;
     }
     #issues {
-        margin-top: 40px;
+        margin-top: 30px;
         font-size: 14px;
     }
 }
