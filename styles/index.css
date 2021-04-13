@@ -9,15 +9,18 @@
     margin: 0 50px;
 }
 
-.zeenaLeft {
+.zeenaLeft,
+.zeenaRight {
     position: absolute;
     top: 80px;
+    z-index: 6;
+}
+
+.zeenaLeft {
     left: 5%;
 }
 
 .zeenaRight {
-    position: absolute;
-    top: 80px;
     right: 5%;
 }
 
