@@ -110,4 +110,7 @@
         margin-top: 30px;
         font-size: 14px;
     }
+    .announcement a {
+        box-shadow: inset 0 0px 0 white, inset 0 -1px 0 white
+    }
 }
