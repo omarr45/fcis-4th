@@ -89,6 +89,30 @@ button {
     color: #0078E3;
 }
 
+.alert {
+    font-size: 30px;
+    background: #0078E3;
+    padding: 40px;
+    border: solid white 8px;
+    margin-bottom: 20px;
+}
+
+.alert h4 {
+    font-size: inherit;
+    font-weight: 600;
+    text-align: left;
+    margin-left: -20px;
+    margin-top: -20px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: solid white 3px;
+    font-style: italic;
+}
+
+.alert a {
+    color: inherit;
+}
+
 hr {
     border: none;
     border-top: 1px solid grey;
@@ -125,5 +149,15 @@ h4 {
     }
     .panel i {
         margin-right: 10px;
+    }
+    .alert {
+        font-size: 20px;
+        padding: 20px;
+        border: solid white 5px;
+    }
+    .alert h4 {
+        text-align: center;
+        margin: 0;
+        margin-bottom: 10px;
     }
 }
