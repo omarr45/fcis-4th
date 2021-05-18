@@ -8,7 +8,7 @@
     background-image: linear-gradient( 135deg, #1d79cf 25%, #0b67bd 25%, #0b67bd 50%, #1d79cf 50%, #1d79cf 75%, #0b67bd 75%, #0b67bd 100%);
     background-size: 40px 40px;
     height: 100%;
-    width: 60%;
+    width: 2%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,6 +24,12 @@
     align-items: center;
     height: 100%;
     padding: 0 20px;
+}
+
+.progress {
+    text-align: left;
+    margin: 10px;
+    font-size: 1.6rem;
 }
 
 .accordion {
@@ -186,7 +192,7 @@ h4 {
     display: none;
 }
 
-.panel @media (max-width: 1200px) {
+@media (max-width: 1200px) {
     .hdrs .course {
         font-size: 36px;
     }
@@ -194,9 +200,16 @@ h4 {
         font-size: 16px;
         margin-top: 10px;
     }
+    .progressContent {
+        font-size: 18px;
+    }
 }
 
 @media (max-width: 500px) {
+    .progress {
+        font-size: 20px;
+        text-align: center;
+    }
     .hdrs {
         text-align: center;
         margin: 0;

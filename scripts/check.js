@@ -50,10 +50,8 @@ const setCheckedValue = () => {
   const background = document.getElementById('back');
   const value = parseInt(getChecked());
   const finalAns = Math.round((value / checkBoxes.length) * 10000) / 100;
-  precentage.innerHTML = `Completed : ${finalAns} %`;
-  finalAns < 20
-    ? (background.style.width = '20%')
-    : (background.style.width = (value * 100) / checkBoxes.length + '%');
+  precentage.innerHTML = `Progress : ${finalAns} %`;
+  background.style.width = (value * 100) / checkBoxes.length + '%';
 };
 
 setCheckedValue();
