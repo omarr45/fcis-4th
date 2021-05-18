@@ -30,5 +30,23 @@ for (let i = 0; i < checkBoxes.length; i++) {
   const current = checkBoxes.item(i);
   current?.addEventListener('click', () => {
     localStorage.setItem(document.title + links.item(i).text, current?.checked);
+    setCheckedValue();
   });
 }
+
+// TODO: Get the number of checked boxes
+
+// const getChecked = () => {
+//   let count = 0;
+//   for (let i = 0; i < checkBoxes.length; i++) {
+//     if (JSON.parse(localStorage.getItem(document.title + links.item(i).text)))
+//       count++;
+//   }
+//   return count;
+// };
+
+// const setCheckedValue = () => {
+//   const precentage = document.getElementById('perc');
+//   const value = parseInt(getChecked());
+//   precentage.innerHTML = `Percentage = ${value / checkBoxes.length}`;
+// };

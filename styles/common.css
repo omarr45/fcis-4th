@@ -14,8 +14,8 @@
 
 .palettes {
     color: #18293b;
-    color: #0078E3;
-    color: #4ADEDE;
+    color: #0078e3;
+    color: #4adede;
 }
 
 * {
@@ -43,7 +43,7 @@ nav {
     display: flex;
     height: 80px;
     width: 100%;
-    background: #0078E3;
+    background: #0078e3;
     align-items: center;
     justify-content: space-between;
     padding: 0 30px 0 80px;
@@ -66,6 +66,7 @@ nav ul {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
+    z-index: 10;
 }
 
 nav ul li {
@@ -85,7 +86,7 @@ nav ul li a {
 
 nav ul li a.active,
 nav ul li a:hover {
-    color: #293C50;
+    color: #293c50;
     background: #fff;
 }
 
@@ -101,7 +102,7 @@ nav .menu-btn i {
     display: none;
 }
 
-input[type="checkbox"] {
+input[type='checkbox'] {
     display: none;
 }
 
@@ -151,13 +152,13 @@ footer {
         display: block;
     }
     #click:checked~.menu-btn i:before {
-        content: "\f00d";
+        content: '\f00d';
     }
     nav ul {
         position: fixed;
         top: 80px;
         left: -100%;
-        background: #293C50;
+        background: #293c50;
         height: 100vh;
         width: 100%;
         text-align: center;
@@ -183,13 +184,13 @@ footer {
     }
     nav ul li a.active {
         background: none;
-        color: #4ADEDE;
+        color: #4adede;
         font-size: 50px;
         font-weight: 600;
     }
     nav ul li a:hover {
         background: none;
-        color: #4ADEDE;
+        color: #4adede;
         font-size: 40px;
         transition: 0.3s;
         transition-timing-function: ease-in-out;
