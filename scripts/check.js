@@ -36,17 +36,24 @@ for (let i = 0; i < checkBoxes.length; i++) {
 
 // TODO: Get the number of checked boxes
 
-// const getChecked = () => {
-//   let count = 0;
-//   for (let i = 0; i < checkBoxes.length; i++) {
-//     if (JSON.parse(localStorage.getItem(document.title + links.item(i).text)))
-//       count++;
-//   }
-//   return count;
-// };
+const getChecked = () => {
+  let count = 0;
+  for (let i = 0; i < checkBoxes.length; i++) {
+    if (JSON.parse(localStorage.getItem(document.title + links.item(i).text)))
+      count++;
+  }
+  return count;
+};
 
-// const setCheckedValue = () => {
-//   const precentage = document.getElementById('perc');
-//   const value = parseInt(getChecked());
-//   precentage.innerHTML = `Percentage = ${value / checkBoxes.length}`;
-// };
+const setCheckedValue = () => {
+  const precentage = document.getElementById('progress');
+  const background = document.getElementById('back');
+  const value = parseInt(getChecked());
+  const finalAns = Math.round((value / checkBoxes.length) * 10000) / 100;
+  precentage.innerHTML = `Completed : ${finalAns} %`;
+  finalAns < 20
+    ? (background.style.width = '20%')
+    : (background.style.width = (value * 100) / checkBoxes.length + '%');
+};
+
+setCheckedValue();

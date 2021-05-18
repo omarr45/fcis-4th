@@ -1,3 +1,31 @@
+.progressContainer {
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-bottom: 20px;
+}
+
+.progressBack {
+    background-image: linear-gradient( 135deg, #1d79cf 25%, #0b67bd 25%, #0b67bd 50%, #1d79cf 50%, #1d79cf 75%, #0b67bd 75%, #0b67bd 100%);
+    background-size: 40px 40px;
+    height: 100%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: width 0.6s ease;
+}
+
+.progressContent {
+    font-size: 1.5em;
+    background-color: rgba(255, 255, 255, 0.7);
+    color: #03447c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 20px;
+}
+
 .accordion {
     background-color: #eee;
     color: #333;
