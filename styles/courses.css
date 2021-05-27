@@ -75,15 +75,4 @@ td:nth-child(2n + 1) {
     }
 }
 
-@media screen and (min-width: 320px) and (max-width: 760px) and (orientation: portrait) {
-    html {
-        transform: rotate(-90deg);
-        transform-origin: left top;
-        width: 100vh;
-        height: 100vw;
-        overflow-y: hidden;
-        position: absolute;
-        top: 100%;
-        left: 0;
-    }
-}
+@media screen and (orientation: portrait) {}
