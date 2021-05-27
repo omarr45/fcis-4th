@@ -1,3 +1,7 @@
+.overflow {
+    overflow-x: auto;
+}
+
 .shown {
     margin: 10px 0px;
     padding: 20px;
