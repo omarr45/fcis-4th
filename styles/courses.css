@@ -12,7 +12,11 @@
 }
 
 .shown {
-    font-size: 18px;
+    background-color: #0078e3;
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 20px;
 }
 
 .shown p {
@@ -65,7 +69,15 @@ td:nth-child(2n + 1) {
     background-color: #ddd;
 }
 
-@media (max-width: 500px) {
+.portrait-render {
+    display: none;
+    font-size: 1.4rem;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 720px) {
     .shown p {
         padding: 0px;
         margin: 20px 0px;
@@ -73,6 +85,13 @@ td:nth-child(2n + 1) {
     .shown i {
         margin-right: 10px;
     }
+    table {
+        width: 100%;
+    }
 }
 
-@media screen and (orientation: portrait) {}
+@media screen and (orientation: portrait) {
+    .portrait-render {
+        display: block;
+    }
+}
