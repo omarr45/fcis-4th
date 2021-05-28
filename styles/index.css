@@ -10,11 +10,24 @@
     animation: fromUp 1.2s;
 }
 
-#wlcm {
+.wlcm {
     font-size: 60px;
     font-weight: 600;
     margin-bottom: 20px;
-    margin: 0 50px;
+    margin: 0 auto;
+    width: 70%;
+}
+
+.wlcm a {
+    color: inherit;
+    text-decoration: none;
+    box-shadow: inset 0 0 0 white, inset 0 -4px 0 white;
+}
+
+.courses {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    margin-top: 20px;
 }
 
 .zeenaLeft,
@@ -37,7 +50,7 @@
 }
 
 .announcement {
-    background: #0078E3;
+    background: #0078e3;
     margin: 2.5% 15%;
     padding: 15px;
     border-radius: 15px;
@@ -48,7 +61,7 @@
 .announcement a {
     color: white;
     text-decoration: none;
-    box-shadow: inset 0 0px 0 white, inset 0 -2px 0 white
+    box-shadow: inset 0 0px 0 white, inset 0 -2px 0 white;
 }
 
 #os {
@@ -94,7 +107,7 @@
 }
 
 @media (max-width: 600px) {
-    #wlcm {
+    .wlcm {
         font-size: 40px;
         margin: 0 10px;
     }
@@ -128,6 +141,6 @@
         font-size: 14px;
     }
     .announcement a {
-        box-shadow: inset 0 0px 0 white, inset 0 -1px 0 white
+        box-shadow: inset 0 0px 0 white, inset 0 -1px 0 white;
     }
 }

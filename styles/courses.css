@@ -1,3 +1,9 @@
+.ttl {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
 .overflow {
     overflow-x: auto;
 }
