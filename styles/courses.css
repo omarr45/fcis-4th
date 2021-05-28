@@ -98,6 +98,7 @@ td:nth-child(2n + 1) {
     }
     table {
         width: 100%;
+        font-size: 1rem;
     }
 }
 
