@@ -109,7 +109,8 @@
 @media (max-width: 600px) {
     .wlcm {
         font-size: 40px;
-        margin: 0 10px;
+        width: 90%;
+        margin: 0 auto;
     }
     #fanoos {
         width: 26px;
