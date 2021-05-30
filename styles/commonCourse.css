@@ -123,6 +123,23 @@ button {
     color: #0078e3;
 }
 
+.exam {
+    font-size: 30px;
+    background: white;
+    padding: 20px;
+    border: solid #0078e3 6px;
+    margin-bottom: 20px;
+    color: #0078e3;
+}
+
+.exam a {
+    color: inherit;
+}
+
+.exam a:hover {
+    filter: brightness(85%);
+}
+
 .alert {
     font-size: 30px;
     background: #0078e3;
