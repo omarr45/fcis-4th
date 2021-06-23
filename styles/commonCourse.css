@@ -145,7 +145,7 @@ button {
     background: #0078e3;
     padding: 40px;
     border: solid white 8px;
-    margin-bottom: 20px;
+    margin: 20px auto;
 }
 
 .alert h4 {
