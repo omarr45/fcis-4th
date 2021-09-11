@@ -1,398 +1,655 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
 
-<head>
-    <meta charset="utf-8">
+    <script
+      src="https://kit.fontawesome.com/e38234dfec.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      data-ad-client="ca-pub-8729859208925325"
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+    ></script>
 
-    <script src="https://kit.fontawesome.com/e38234dfec.js" crossorigin="anonymous"></script>
-    <script data-ad-client="ca-pub-8729859208925325" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <link rel="stylesheet" href="styles/common.css" />
+    <link rel="stylesheet" href="styles/commonCourse.css" />
+    <link rel="icon" href="assets/favicon.png" sizes="any" type="image/png" />
 
-    <link rel="stylesheet" href="styles/common.css">
-    <link rel="stylesheet" href="styles/commonCourse.css">
-    <link rel="icon" href="assets/favicon.png" sizes="any" type="image/png">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="og:title" property="og:title" content="FCIS 2023">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="og:title" property="og:title" content="FCIS 2023" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#0078E3" />
 
-
     <title>Artificial Intelligence</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <nav>
-        <div class="logo">
-            <a href="index.html" style="text-decoration: none; color: white;">
-              FCIS 2023
-            </a>
-        </div>
-        <input type="checkbox" id="click">
-        <label for="click" class="menu-btn">
+      <div class="logo">
+        <a href="index.html" style="text-decoration: none; color: white">
+          FCIS 2023
+        </a>
+      </div>
+      <input type="checkbox" id="click" />
+      <label for="click" class="menu-btn">
         <i class="fas fa-bars"></i>
       </label>
-        <ul>
-            <li><a href="ds.html" title="Data Structures">Data Structures</a></li>
-            <li><a href="ai.html" class="active" title="Artificial Intelligence">Artificial Intelligence</a></li>
-            <li><a href="la.html" title="Linear Algebra">Linear Algebra</a></li>
-            <li><a href="ca.html" title="Computer Architecture">Computer Architecture</a></li>
-            <li><a href="or.html" title="Operations Research">Operations Research</a></li>
-        </ul>
+      <ul>
+        <li><a href="ds.html" title="Data Structures">Data Structures</a></li>
+        <li>
+          <a href="ai.html" class="active" title="Artificial Intelligence"
+            >Artificial Intelligence</a
+          >
+        </li>
+        <li><a href="la.html" title="Linear Algebra">Linear Algebra</a></li>
+        <li>
+          <a href="ca.html" title="Computer Architecture"
+            >Computer Architecture</a
+          >
+        </li>
+        <li>
+          <a href="or.html" title="Operations Research">Operations Research</a>
+        </li>
+      </ul>
     </nav>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LQ4C5TLEYJ"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-LQ4C5TLEYJ"
+    ></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
+      window.dataLayer = window.dataLayer || [];
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
 
-        gtag('config', 'G-LQ4C5TLEYJ');
+      gtag('config', 'G-LQ4C5TLEYJ');
     </script>
 
     <div class="content">
-
-        <!-- <div class="alert">
+      <!-- <div class="alert">
             <p>
                 ** Testing Ads **
             </p>
         </div> -->
-        <!-- 
+      <!-- 
         <script data-ad-client="ca-pub-8729859208925325" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
 
-        <div class="hdrs">
-            <div class="course"> Artificial Intelligence </div>
-            <div class="prof">
-                <a href="mailto:dina.elsayad@cis.asu.edu.eg"> Dr. Dina Al Sayyad</a>
-            </div>
+      <div class="hdrs">
+        <div class="course">Artificial Intelligence</div>
+        <div class="prof">
+          <a href="mailto:dina.elsayad@cis.asu.edu.eg"> Dr. Dina Al Sayyad</a>
         </div>
+      </div>
 
-        <div class="progress" id="progress">Progress :</div>
-        <div class="progressContainer">
-            <div class="progressBack" id="back">
-            </div>
-        </div>
+      <div class="progress" id="progress">Progress :</div>
+      <div class="progressContainer">
+        <div class="progressBack" id="back"></div>
+      </div>
 
-        <div class="exam">
-            <p>
-                <a href="https://drive.google.com/drive/folders/1hti2lmyNQfQzUv2QFoaj1hThphhUEW6y"> Previous Finals </a>
-            </p>
-            <p>
-                <a href="https://drive.google.com/drive/folders/1ipKO4LmPJaib-Ws_9mZnQc2h2GHeGFmv"> Revision </a>
-            </p>
-        </div>
+      <div class="exam">
+        <p>
+          <a
+            href="https://drive.google.com/drive/folders/1hti2lmyNQfQzUv2QFoaj1hThphhUEW6y"
+          >
+            Previous Finals
+          </a>
+        </p>
+        <p>
+          <a
+            href="https://drive.google.com/drive/folders/1ipKO4LmPJaib-Ws_9mZnQc2h2GHeGFmv"
+          >
+            Revision
+          </a>
+        </p>
+      </div>
 
-        <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
-        <!-- FirstAdTest -->
-        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8729859208925325" data-ad-slot="6565956232" data-ad-format="auto" data-full-width-responsive="true"></ins>
-        <script>
-            (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
+      <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
+      <!-- FirstAdTest -->
+      <ins
+        class="adsbygoogle"
+        style="display: block"
+        data-ad-client="ca-pub-8729859208925325"
+        data-ad-slot="6565956232"
+        data-ad-format="auto"
+        data-full-width-responsive="true"
+      ></ins>
+      <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
 
-        <div class="alert arb" dir="rtl">
-            <h4 class="ttle arb" style="text-align: right;"> شكل أسئلة امتحان الفاينال </h4>
-            <p>
-                دي <a href="https://drive.google.com/file/d/1deGvvgKhuQaqTmoW0BrfuoL7LDih6vdz/view"> أشكال المسائل</a> اللي ممكن تجيلنا في الامتحان
-                <br> وده
-                <a href="https://www.dumpsbase.com/freedumps/hcia-ai-v3-0-certification-h13-311_v3-0-exam-dumps.html">لينك</a> فيه 30 سؤال MCQ ممكن يجيلنا حاجات شبههم
-            </p>
-        </div>
+      <div class="alert arb" dir="rtl">
+        <h4 class="ttle arb" style="text-align: right">
+          شكل أسئلة امتحان الفاينال
+        </h4>
+        <p>
+          دي
+          <a
+            href="https://drive.google.com/file/d/1deGvvgKhuQaqTmoW0BrfuoL7LDih6vdz/view"
+          >
+            أشكال المسائل</a
+          >
+          اللي ممكن تجيلنا في الامتحان <br />
+          وده
+          <a
+            href="https://www.dumpsbase.com/freedumps/hcia-ai-v3-0-certification-h13-311_v3-0-exam-dumps.html"
+            >لينك</a
+          >
+          فيه 30 سؤال MCQ ممكن يجيلنا حاجات شبههم
+        </p>
+      </div>
 
-        <div class="alert arb" dir="rtl">
-            <h4 class="ttle arb" style="text-align: right;"> توزيعة امتحان الفاينال </h4>
-            <p>
-                <strong class="arb"> • كل القوانين هتبقى Given إن شاء الله</strong><br> هيبقي جزئين: <br> - جزء الميدترم [١٥ درجة]: عبارة عن سؤال Match the word to the definition <br> - جزء الفاينال [٥٠ درجة]: <br> أ) MCQ [٢٤ درجة]<br> ب) سؤال نظري [١٣
-                درجة] زي مثلاً State the meaning او Compare (علي سبيل المثال وليس الحصر) مش مطلوب نرغي لكن نقول الmain points <br> ج) عملية حسابية [١٣ درجة] محددتش كام مسألة<br> • محاضرة ٦، ٧، ٨ الاسئلة اللي هتيجي منهم هتبقي هي هي الاسئلة الموجودة في
-                اخر السلايدز بتاعت كل واحدة<br> • اللابات مش داخلة في الفاينال، يعني مش هنتسئل في كود<br> • الDecision Tree: <br> - ممكن تقولك Mention the steps وهما ٣ خطوات تقولهم<br> - لكن مش هتقولك تعمل build او تحسب حاجة في الtree<br> •في كويز هيتعمل
-                في خلال الفترة اللي بعد العملي و قبل الفاينال هيكون MCQ وهيوضحلنا شكل اسئلة الامتحان اكتر<br> • الدرجة الاعلي في الكويزين هي اللي هتتحسبلنا<br>
-            </p>
-        </div>
+      <div class="alert arb" dir="rtl">
+        <h4 class="ttle arb" style="text-align: right">
+          توزيعة امتحان الفاينال
+        </h4>
+        <p>
+          <strong class="arb"> • كل القوانين هتبقى Given إن شاء الله</strong
+          ><br />
+          هيبقي جزئين: <br />
+          - جزء الميدترم [١٥ درجة]: عبارة عن سؤال Match the word to the
+          definition <br />
+          - جزء الفاينال [٥٠ درجة]: <br />
+          أ) MCQ [٢٤ درجة]<br />
+          ب) سؤال نظري [١٣ درجة] زي مثلاً State the meaning او Compare (علي سبيل
+          المثال وليس الحصر) مش مطلوب نرغي لكن نقول الmain points <br />
+          ج) عملية حسابية [١٣ درجة] محددتش كام مسألة<br />
+          • محاضرة ٦، ٧، ٨ الاسئلة اللي هتيجي منهم هتبقي هي هي الاسئلة الموجودة
+          في اخر السلايدز بتاعت كل واحدة<br />
+          • اللابات مش داخلة في الفاينال، يعني مش هنتسئل في كود<br />
+          • الDecision Tree: <br />
+          - ممكن تقولك Mention the steps وهما ٣ خطوات تقولهم<br />
+          - لكن مش هتقولك تعمل build او تحسب حاجة في الtree<br />
+          •في كويز هيتعمل في خلال الفترة اللي بعد العملي و قبل الفاينال هيكون
+          MCQ وهيوضحلنا شكل اسئلة الامتحان اكتر<br />
+          • الدرجة الاعلي في الكويزين هي اللي هتتحسبلنا<br />
+        </p>
+      </div>
 
-        <button class="accordion fixed ">Resources</button>
-        <div class="panel ">
-            <p>
-                <i class="fas fa-user-friends"></i> Microsoft Teams Code: twjw44j
-            </p>
-            <p>
-                <i class="fas fa-play"></i>
-                <a href="https://web.microsoftstream.com/channel/0de8ca51-f0ba-4cf7-97ce-1f1036014d0c" target="_blank"> Microsoft Stream Channel </a>
-            </p>
-        </div>
+      <button class="accordion fixed">Resources</button>
+      <div class="panel">
+        <p><i class="fas fa-user-friends"></i> Microsoft Teams Code: twjw44j</p>
+        <p>
+          <i class="fas fa-play"></i>
+          <a
+            href="https://web.microsoftstream.com/channel/0de8ca51-f0ba-4cf7-97ce-1f1036014d0c"
+            target="_blank"
+          >
+            Microsoft Stream Channel
+          </a>
+        </p>
+      </div>
 
-        <button class="accordion ">Week 1</button>
-        <div class="panel">
-            <p>
-                <i class="fas fa-play-circle"></i>
-                <a href="https://web.microsoftstream.com/video/a19a40a8-270f-44ae-a413-2800a0e58045" target="_blank" class="addCheck">Lecture 1 (Video)</a>
-            </p>
-            <p>
-                <i class="fas fa-file-download"></i>
-                <a href="materials/Dr/AI_L01.pdf" target="_blank" class="addCheck">Lecture 1 (PDF)</a>
-            </p>
-            <hr>
-            <p>
-                <i class="fas fa-handshake fa-lg"></i>
-                <a><b><u>Students' Materials</u> &#8628;</b></a>
-            </p>
-            <p>
-                <i class="fas fa-play-circle"></i>
-                <a href="https://youtu.be/1r8Eq4ao76E" target="_blank" class="addCheck">Lectures 1 & 2 - Omar AbdulRahman</a>
-            </p>
-        </div>
+      <button class="accordion">Week 1</button>
+      <div class="panel">
+        <p>
+          <i class="fas fa-play-circle"></i>
+          <a
+            href="https://web.microsoftstream.com/video/a19a40a8-270f-44ae-a413-2800a0e58045"
+            target="_blank"
+            class="addCheck"
+            >Lecture 1 (Video)</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file-download"></i>
+          <a href="materials/Dr/AI_L01.pdf" target="_blank" class="addCheck"
+            >Lecture 1 (PDF)</a
+          >
+        </p>
+        <hr />
+        <p>
+          <i class="fas fa-handshake fa-lg"></i>
+          <a
+            ><b><u>Students' Materials</u> &#8628;</b></a
+          >
+        </p>
+        <p>
+          <i class="fas fa-play-circle"></i>
+          <a
+            href="https://youtu.be/1r8Eq4ao76E"
+            target="_blank"
+            class="addCheck"
+            >Lectures 1 & 2 - Omar AbdulRahman</a
+          >
+        </p>
+      </div>
 
-        <button class="accordion ">Week 2</button>
-        <div class="panel">
-            <p>
-                <i class="fas fa-play-circle"></i>
-                <a href="https://web.microsoftstream.com/video/991ee1fa-0c41-4036-b93f-87087aeb9d7e" target="_blank" class="addCheck">Lecture 2 (Video)</a>
-            </p>
-            <p>
-                <i class="fas fa-file-download"></i>
-                <a href="materials/Dr/AI_L02.pdf" target="_blank" class="addCheck">Lecture 2 (PDF)</a>
-            </p>
-            <hr>
-            <p>
-                <i class="fas fa-play-circle"></i>
-                <a href="https://web.microsoftstream.com/video/7bb3ba61-523e-40af-8817-788952cfd17b" target="_blank" class="addCheck">Lab 1 (Video)</a>
-            </p>
-            <p>
-                <i class="fas fa-file-download"></i>
-                <a href="materials/Dr/AI_S01.pdf" target="_blank" class="addCheck">Lab 1 (PDF)</a>
-            </p>
-            <p>
-                <i class="fas fa-code"></i>
-                <a href="https://drive.google.com/file/d/13g0jJjk2KlC3x0MZsKmJL3bvMu6XcY4u/" target="_blank" class="addCheck">Lab 1 (Code)</a>
-            </p>
-            <hr>
-            <p>
-                <i class="fas fa-handshake fa-lg"></i>
-                <a><b><u>Students' Materials</u> &#8628;</b></a>
-            </p>
-            <p>
-                <i class="fas fa-play-circle"></i>
-                <a href="https://youtu.be/1r8Eq4ao76E" target="_blank" class="addCheck">Lectures 1 & 2 - Omar AbdulRahman</a>
-            </p>
-        </div>
+      <button class="accordion">Week 2</button>
+      <div class="panel">
+        <p>
+          <i class="fas fa-play-circle"></i>
+          <a
+            href="https://web.microsoftstream.com/video/991ee1fa-0c41-4036-b93f-87087aeb9d7e"
+            target="_blank"
+            class="addCheck"
+            >Lecture 2 (Video)</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file-download"></i>
+          <a href="materials/Dr/AI_L02.pdf" target="_blank" class="addCheck"
+            >Lecture 2 (PDF)</a
+          >
+        </p>
+        <hr />
+        <p>
+          <i class="fas fa-play-circle"></i>
+          <a
+            href="https://web.microsoftstream.com/video/7bb3ba61-523e-40af-8817-788952cfd17b"
+            target="_blank"
+            class="addCheck"
+            >Lab 1 (Video)</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file-download"></i>
+          <a href="materials/Dr/AI_S01.pdf" target="_blank" class="addCheck"
+            >Lab 1 (PDF)</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-code"></i>
+          <a
+            href="https://drive.google.com/file/d/13g0jJjk2KlC3x0MZsKmJL3bvMu6XcY4u/"
+            target="_blank"
+            class="addCheck"
+            >Lab 1 (Code)</a
+          >
+        </p>
+        <hr />
+        <p>
+          <i class="fas fa-handshake fa-lg"></i>
+          <a
+            ><b><u>Students' Materials</u> &#8628;</b></a
+          >
+        </p>
+        <p>
+          <i class="fas fa-play-circle"></i>
+          <a
+            href="https://youtu.be/1r8Eq4ao76E"
+            target="_blank"
+            class="addCheck"
+            >Lectures 1 & 2 - Omar AbdulRahman</a
+          >
+        </p>
+      </div>
 
-        <button class="accordion ">Week 3</button>
-        <div class="panel">
-            <p>
-                <i class="fas fa-play-circle"></i>
-                <a href="https://drive.google.com/file/d/13tinUjyT52DI23fP5zk-wOK7VYYdt8Ht/view" target="_blank" class="addCheck">Lecture 3 (Video)</a>
-            </p>
-            <p>
-                <i class="fas fa-file-download"></i>
-                <a href="materials/Dr/AI_L03.pdf" target="_blank" class="addCheck">Lecture 3 (PDF)</a>
-            </p>
-            <hr>
-            <p>
-                <i class="fas fa-play-circle"></i>
-                <a href="https://web.microsoftstream.com/video/0fb9f1e5-750a-4e36-abf4-9b49b8ab114d" target="_blank" class="addCheck">Lab 2 (Video)</a>
-            </p>
-            <p>
-                <i class="fas fa-file-download"></i>
-                <a href="materials/Dr/AI_S02.pdf" target="_blank" class="addCheck">Lab 2 (PDF)</a>
-            </p>
-            <hr>
-            <p>
-                <i class="fas fa-handshake fa-lg"></i>
-                <a><b><u>Students' Materials</u> &#8628;</b></a>
-            </p>
-            <p>
-                <i class="fas fa-play-circle"></i>
-                <a href="https://youtu.be/eKVwTtY1sRQ" target="_blank" class="addCheck">Lecture 3 - Omar AbdulRahman</a>
-            </p>
-        </div>
+      <button class="accordion">Week 3</button>
+      <div class="panel">
+        <p>
+          <i class="fas fa-play-circle"></i>
+          <a
+            href="https://drive.google.com/file/d/13tinUjyT52DI23fP5zk-wOK7VYYdt8Ht/view"
+            target="_blank"
+            class="addCheck"
+            >Lecture 3 (Video)</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file-download"></i>
+          <a href="materials/Dr/AI_L03.pdf" target="_blank" class="addCheck"
+            >Lecture 3 (PDF)</a
+          >
+        </p>
+        <hr />
+        <p>
+          <i class="fas fa-play-circle"></i>
+          <a
+            href="https://web.microsoftstream.com/video/0fb9f1e5-750a-4e36-abf4-9b49b8ab114d"
+            target="_blank"
+            class="addCheck"
+            >Lab 2 (Video)</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file-download"></i>
+          <a href="materials/Dr/AI_S02.pdf" target="_blank" class="addCheck"
+            >Lab 2 (PDF)</a
+          >
+        </p>
+        <hr />
+        <p>
+          <i class="fas fa-handshake fa-lg"></i>
+          <a
+            ><b><u>Students' Materials</u> &#8628;</b></a
+          >
+        </p>
+        <p>
+          <i class="fas fa-play-circle"></i>
+          <a
+            href="https://youtu.be/eKVwTtY1sRQ"
+            target="_blank"
+            class="addCheck"
+            >Lecture 3 - Omar AbdulRahman</a
+          >
+        </p>
+      </div>
 
-        <button class="accordion ">Week 4</button>
-        <div class="panel">
-            <p>
-                <i class="fas fa-play-circle"></i>
-                <a href="https://web.microsoftstream.com/video/095aae9d-d9f4-4ba2-b261-67c3982c6043" target="_blank" class="addCheck">Lecture 4 (Video)</a>
-            </p>
-            <p>
-                <i class="fas fa-file-download"></i>
-                <a href="materials/Dr/AI_L04.pdf" target="_blank" class="addCheck">Lecture 4 (PDF)</a>
-            </p>
-            <hr>
-            <p>
-                <i class="fas fa-play-circle"></i>
-                <a href="https://web.microsoftstream.com/video/1d1a96bf-4eda-4cf9-b908-944a2e48630c" target="_blank" class="addCheck">Lab 3 (Video)</a>
-            </p>
-            <p>
-                <i class="fas fa-file-download"></i>
-                <a href="materials/Dr/AI_S03.pdf" target="_blank" class="addCheck">Lab 3 (PDF)</a>
-            </p>
-            <hr>
-            <p>
-                <i class="fas fa-handshake fa-lg"></i>
-                <a><b><u>Students' Materials</u> &#8628;</b></a>
-            </p>
-            <p>
-                <i class="fas fa-play-circle"></i>
-                <a href="https://youtu.be/Zm1nXUlgifE" target="_blank" class="addCheck">Lecture 4 (Part 1) - Omar AbdulRahman</a>
-            </p>
-            <p>
-                <i class="fas fa-play-circle"></i>
-                <a href="https://youtu.be/_3lERDbU8WE" target="_blank" class="addCheck">Lecture 4 (Part 2) - Omar AbdulRahman</a>
-            </p>
-        </div>
+      <button class="accordion">Week 4</button>
+      <div class="panel">
+        <p>
+          <i class="fas fa-play-circle"></i>
+          <a
+            href="https://web.microsoftstream.com/video/095aae9d-d9f4-4ba2-b261-67c3982c6043"
+            target="_blank"
+            class="addCheck"
+            >Lecture 4 (Video)</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file-download"></i>
+          <a href="materials/Dr/AI_L04.pdf" target="_blank" class="addCheck"
+            >Lecture 4 (PDF)</a
+          >
+        </p>
+        <hr />
+        <p>
+          <i class="fas fa-play-circle"></i>
+          <a
+            href="https://web.microsoftstream.com/video/1d1a96bf-4eda-4cf9-b908-944a2e48630c"
+            target="_blank"
+            class="addCheck"
+            >Lab 3 (Video)</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file-download"></i>
+          <a href="materials/Dr/AI_S03.pdf" target="_blank" class="addCheck"
+            >Lab 3 (PDF)</a
+          >
+        </p>
+        <hr />
+        <p>
+          <i class="fas fa-handshake fa-lg"></i>
+          <a
+            ><b><u>Students' Materials</u> &#8628;</b></a
+          >
+        </p>
+        <p>
+          <i class="fas fa-play-circle"></i>
+          <a
+            href="https://youtu.be/Zm1nXUlgifE"
+            target="_blank"
+            class="addCheck"
+            >Lecture 4 (Part 1) - Omar AbdulRahman</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-play-circle"></i>
+          <a
+            href="https://youtu.be/_3lERDbU8WE"
+            target="_blank"
+            class="addCheck"
+            >Lecture 4 (Part 2) - Omar AbdulRahman</a
+          >
+        </p>
+      </div>
 
-        <button class="accordion ">Week 5</button>
-        <div class="panel">
-            <p>
-                <i class="fas fa-play-circle"></i>
-                <a href="https://web.microsoftstream.com/video/72cea0a1-ca4e-40de-abc0-8eb605f2bfe4" target="_blank" class="addCheck">Lecture 5 (Video)</a>
-            </p>
-            <p>
-                <i class="fas fa-file-download"></i>
-                <a href="materials/Dr/AI_L05.pdf" target="_blank" class="addCheck">Lecture 5 (PDF)</a>
-            </p>
-            <hr>
-            <p>
-                <i class="fas fa-play-circle"></i>
-                <a href="https://web.microsoftstream.com/video/ad9b3778-5628-4435-a405-d8841347529f" target="_blank" class="addCheck">Lab 4 (Video)</a>
-            </p>
-            <p>
-                <i class="fas fa-file-download"></i>
-                <a href="materials/Dr/AI_S04.pdf" target="_blank" class="addCheck">Lab 4 (PDF)</a>
-            </p>
-            <hr>
-            <p>
-                <i class="fas fa-handshake fa-lg"></i>
-                <a><b><u>Students' Materials</u> &#8628;</b></a>
-            </p>
-            <p>
-                <i class="fas fa-play-circle"></i>
-                <a href="https://youtu.be/U3UJ5yfRSK8" target="_blank" class="addCheck">Lecture 5 (Part 1) - Omar AbdulRahman</a>
-            </p>
-            <p>
-                <i class="fas fa-play-circle"></i>
-                <a href="https://youtu.be/Zp7HPVrHrAs" target="_blank" class="addCheck">Lecture 5 (Part 2) - Omar AbdulRahman</a>
-            </p>
-        </div>
+      <button class="accordion">Week 5</button>
+      <div class="panel">
+        <p>
+          <i class="fas fa-play-circle"></i>
+          <a
+            href="https://web.microsoftstream.com/video/72cea0a1-ca4e-40de-abc0-8eb605f2bfe4"
+            target="_blank"
+            class="addCheck"
+            >Lecture 5 (Video)</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file-download"></i>
+          <a href="materials/Dr/AI_L05.pdf" target="_blank" class="addCheck"
+            >Lecture 5 (PDF)</a
+          >
+        </p>
+        <hr />
+        <p>
+          <i class="fas fa-play-circle"></i>
+          <a
+            href="https://web.microsoftstream.com/video/ad9b3778-5628-4435-a405-d8841347529f"
+            target="_blank"
+            class="addCheck"
+            >Lab 4 (Video)</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file-download"></i>
+          <a href="materials/Dr/AI_S04.pdf" target="_blank" class="addCheck"
+            >Lab 4 (PDF)</a
+          >
+        </p>
+        <hr />
+        <p>
+          <i class="fas fa-handshake fa-lg"></i>
+          <a
+            ><b><u>Students' Materials</u> &#8628;</b></a
+          >
+        </p>
+        <p>
+          <i class="fas fa-play-circle"></i>
+          <a
+            href="https://youtu.be/U3UJ5yfRSK8"
+            target="_blank"
+            class="addCheck"
+            >Lecture 5 (Part 1) - Omar AbdulRahman</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-play-circle"></i>
+          <a
+            href="https://youtu.be/Zp7HPVrHrAs"
+            target="_blank"
+            class="addCheck"
+            >Lecture 5 (Part 2) - Omar AbdulRahman</a
+          >
+        </p>
+      </div>
 
-        <button class="accordion ">Week 6</button>
-        <div class="panel">
-            <p>
-                <i class="fas fa-play-circle"></i>
-                <a href="https://web.microsoftstream.com/video/d5dd0228-133f-4da0-a4fd-1185ad7f759c" target="_blank" class="addCheck">Lecture 6 (Video)</a>
-            </p>
-            <p>
-                <i class="fas fa-file-download"></i>
-                <a href="materials/Dr/AI_L06.pdf" target="_blank" class="addCheck">Lecture 6 (PDF)</a>
-            </p>
-            <hr>
-            <p>
-                <i class="fas fa-play-circle"></i>
-                <a href="https://web.microsoftstream.com/video/5c9b71f7-3f3e-4d3f-8b87-bb8a799ef76f" target="_blank" class="addCheck">Lab 5 (Video)</a>
-            </p>
-            <p>
-                <i class="fas fa-file-download"></i>
-                <a href="materials/Dr/AI_S05.pdf" target="_blank" class="addCheck">Lab 5 (PDF)</a>
-            </p>
-        </div>
+      <button class="accordion">Week 6</button>
+      <div class="panel">
+        <p>
+          <i class="fas fa-play-circle"></i>
+          <a
+            href="https://web.microsoftstream.com/video/d5dd0228-133f-4da0-a4fd-1185ad7f759c"
+            target="_blank"
+            class="addCheck"
+            >Lecture 6 (Video)</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file-download"></i>
+          <a href="materials/Dr/AI_L06.pdf" target="_blank" class="addCheck"
+            >Lecture 6 (PDF)</a
+          >
+        </p>
+        <hr />
+        <p>
+          <i class="fas fa-play-circle"></i>
+          <a
+            href="https://web.microsoftstream.com/video/5c9b71f7-3f3e-4d3f-8b87-bb8a799ef76f"
+            target="_blank"
+            class="addCheck"
+            >Lab 5 (Video)</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file-download"></i>
+          <a href="materials/Dr/AI_S05.pdf" target="_blank" class="addCheck"
+            >Lab 5 (PDF)</a
+          >
+        </p>
+      </div>
 
-        <button class="accordion ">Week 7</button>
-        <div class="panel">
-            <p>
-                <i class="fas fa-play-circle"></i>
-                <a href="https://web.microsoftstream.com/video/08356505-6e1b-4f8e-8337-21ef08867d9c" target="_blank" class="addCheck">Lecture 7 - Part 1 (Video)</a>
-            </p>
-            <p>
-                <i class="fas fa-play-circle"></i>
-                <a href="https://web.microsoftstream.com/video/8cb8b20d-0872-4c94-94d0-be3c41ef26c6" target="_blank" class="addCheck">Lecture 7 - Part 2 (Video)</a>
-            </p>
-            <p>
-                <i class="fas fa-file-download"></i>
-                <a href="materials/Dr/AI_L07a.pdf" target="_blank" class="addCheck">Lecture 7 - Part 1 (PDF)</a>
-            </p>
-            <p>
-                <i class="fas fa-file-download"></i>
-                <a href="materials/Dr/AI_L07b.pdf" target="_blank" class="addCheck">Lecture 7 - Part 2 (PDF)</a>
-            </p>
-            <hr>
-            <p>
-                <i class="fas fa-play-circle"></i>
-                <a href="https://web.microsoftstream.com/video/b01c093a-edc0-496b-b810-0e1fee4c4620" target="_blank" class="addCheck">Lab 6 (Video)</a>
-            </p>
-            <p>
-                <i class="fas fa-file-download"></i>
-                <a href="materials/Dr/AI_S06.pdf" target="_blank" class="addCheck">Lab 6 (PDF)</a>
-            </p>
-            <p>
-                <i class="fas fa-file-download"></i>
-                <a href="materials/Dr/AI_S06b.pdf" target="_blank" class="addCheck">Lab 6 Extras (PDF)</a>
-            </p>
-        </div>
+      <button class="accordion">Week 7</button>
+      <div class="panel">
+        <p>
+          <i class="fas fa-play-circle"></i>
+          <a
+            href="https://web.microsoftstream.com/video/08356505-6e1b-4f8e-8337-21ef08867d9c"
+            target="_blank"
+            class="addCheck"
+            >Lecture 7 - Part 1 (Video)</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-play-circle"></i>
+          <a
+            href="https://web.microsoftstream.com/video/8cb8b20d-0872-4c94-94d0-be3c41ef26c6"
+            target="_blank"
+            class="addCheck"
+            >Lecture 7 - Part 2 (Video)</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file-download"></i>
+          <a href="materials/Dr/AI_L07a.pdf" target="_blank" class="addCheck"
+            >Lecture 7 - Part 1 (PDF)</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file-download"></i>
+          <a href="materials/Dr/AI_L07b.pdf" target="_blank" class="addCheck"
+            >Lecture 7 - Part 2 (PDF)</a
+          >
+        </p>
+        <hr />
+        <p>
+          <i class="fas fa-play-circle"></i>
+          <a
+            href="https://web.microsoftstream.com/video/b01c093a-edc0-496b-b810-0e1fee4c4620"
+            target="_blank"
+            class="addCheck"
+            >Lab 6 (Video)</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file-download"></i>
+          <a href="materials/Dr/AI_S06.pdf" target="_blank" class="addCheck"
+            >Lab 6 (PDF)</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file-download"></i>
+          <a href="materials/Dr/AI_S06b.pdf" target="_blank" class="addCheck"
+            >Lab 6 Extras (PDF)</a
+          >
+        </p>
+      </div>
 
-        <button class="accordion ">Week 8</button>
-        <div class="panel">
-            <p>
-                <i class="fas fa-play-circle"></i>
-                <a href="https://web.microsoftstream.com/video/eae170b9-d199-49fc-97ea-2697974dbe06" target="_blank" class="addCheck">Lecture 8 (Video)</a>
-            </p>
-            <p>
-                <i class="fas fa-file-download"></i>
-                <a href="materials/Dr/AI_L08.pdf" target="_blank" class="addCheck">Lecture 8 (PDF)</a>
-            </p>
-            <hr>
-            <p>
-                <i class="fas fa-play-circle"></i>
-                <a href="https://web.microsoftstream.com/video/2a5e73b6-4891-490b-b109-b622328bb8f1" target="_blank" class="addCheck">Lab 7 (Video)</a>
-            </p>
-            <p>
-                <i class="fas fa-file-download"></i>
-                <a href="materials/Dr/AI_S07.pdf" target="_blank" class="addCheck">Lab 7 (PDF)</a>
-            </p>
-            <p>
-                <i class="fas fa-file-download"></i>
-                <a href="materials/Dr/Extras/AI_S07.ipynb" target="_blank" class="addCheck">Lab 7 Extras (ipynb)</a>
-            </p>
-        </div>
+      <button class="accordion">Week 8</button>
+      <div class="panel">
+        <p>
+          <i class="fas fa-play-circle"></i>
+          <a
+            href="https://web.microsoftstream.com/video/eae170b9-d199-49fc-97ea-2697974dbe06"
+            target="_blank"
+            class="addCheck"
+            >Lecture 8 (Video)</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file-download"></i>
+          <a href="materials/Dr/AI_L08.pdf" target="_blank" class="addCheck"
+            >Lecture 8 (PDF)</a
+          >
+        </p>
+        <hr />
+        <p>
+          <i class="fas fa-play-circle"></i>
+          <a
+            href="https://web.microsoftstream.com/video/2a5e73b6-4891-490b-b109-b622328bb8f1"
+            target="_blank"
+            class="addCheck"
+            >Lab 7 (Video)</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file-download"></i>
+          <a href="materials/Dr/AI_S07.pdf" target="_blank" class="addCheck"
+            >Lab 7 (PDF)</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file-download"></i>
+          <a
+            href="https://drive.google.com/file/d/1I3bd42Z7mAmPBKCIx4pHyaEAeYqLIu6K/view?usp=sharing"
+            target="_blank"
+            class="addCheck"
+            >Lab 7 Extras (ipynb)</a
+          >
+        </p>
+      </div>
 
-        <button class="accordion ">Week 9</button>
-        <div class="panel">
-            <p>
-                <i class="fas fa-play-circle"></i>
-                <a href="https://web.microsoftstream.com/video/042fbb46-3a66-4e79-906c-9d7ccccc9b6f" target="_blank" class="addCheck">Lab 8 (Video)</a>
-            </p>
-            <p>
-                <i class="fas fa-file-download"></i>
-                <a href="materials/Dr/AI_S08.pdf" target="_blank" class="addCheck">Lab 8 (PDF)</a>
-            </p>
-            <p>
-                <i class="fas fa-file-download"></i>
-                <a href="materials/Dr/Extras/Lab8_Handwritten Digits.ipynb" target="_blank" class="addCheck">Lab 8 - Handwritten Digits (ipynb)</a>
-            </p>
-            <p>
-                <i class="fas fa-file-download"></i>
-                <a href="materials/Dr/Extras/Lab8 - Handwritten Digits.py" target="_blank" class="addCheck">Lab 8 - Handwritten Digits (py)</a>
-            </p>
-            <p>
-                <i class="fas fa-file-download"></i>
-                <a href="materials/Dr/Extras/Lab8_Img Classification.ipynb" target="_blank" class="addCheck">Lab 8 - Image Classification (ipynb)</a>
-            </p>
-            <p>
-                <i class="fas fa-file-download"></i>
-                <a href="materials/Dr/Extras/Lab8 - Img Classification.py" target="_blank" class="addCheck">Lab 8 - Image Classification (py)</a>
-            </p>
-        </div>
-
+      <button class="accordion">Week 9</button>
+      <div class="panel">
+        <p>
+          <i class="fas fa-play-circle"></i>
+          <a
+            href="https://web.microsoftstream.com/video/042fbb46-3a66-4e79-906c-9d7ccccc9b6f"
+            target="_blank"
+            class="addCheck"
+            >Lab 8 (Video)</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file-download"></i>
+          <a href="materials/Dr/AI_S08.pdf" target="_blank" class="addCheck"
+            >Lab 8 (PDF)</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file-download"></i>
+          <a
+            href="https://drive.google.com/file/d/1h8z9lvZUgZJgTY3q-DDSbjoBNM6f4KcA/view?usp=sharing"
+            target="_blank"
+            class="addCheck"
+            >Lab 8 - Handwritten Digits (ipynb)</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file-download"></i>
+          <a
+            href="materials/Dr/Extras/Lab8 - Handwritten Digits.py"
+            target="_blank"
+            class="addCheck"
+            >Lab 8 - Handwritten Digits (py)</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file-download"></i>
+          <a
+            href="https://drive.google.com/file/d/1AA_LHLgpNgkClEqqlVNQop2fFAPTI2o8/view?usp=sharing"
+            target="_blank"
+            class="addCheck"
+            >Lab 8 - Image Classification (ipynb)</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file-download"></i>
+          <a
+            href="materials/Dr/Extras/Lab8 - Img Classification.py"
+            target="_blank"
+            class="addCheck"
+            >Lab 8 - Image Classification (py)</a
+          >
+        </p>
+      </div>
     </div>
 
     <!--Footer-->
     <footer>
-        Developed and maintained by
-        <a href="https://github.com/omarr45/" target="_blank">Omar AbdulRahman</a> - 2021
+      Developed and maintained by
+      <a href="https://github.com/omarr45/" target="_blank">Omar AbdulRahman</a>
+      - 2021
     </footer>
 
     <script src="scripts/accordion.js "></script>
     <script src="scripts/check.js"></script>
-
-</body>
-
+  </body>
 </html>
