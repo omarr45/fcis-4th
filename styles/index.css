@@ -1,162 +1,162 @@
 #icn {
-    width: 20px;
-    position: absolute;
-    z-index: -1;
-    top: 10px;
-    left: 10px;
+  width: 20px;
+  position: absolute;
+  z-index: -1;
+  top: 10px;
+  left: 10px;
 }
 
 .content {
-    animation: fromUp 1.2s;
+  animation: fromUp 1.2s;
 }
 
 .wlcm {
-    font-size: 60px;
-    font-weight: 600;
-    margin-bottom: 20px;
-    margin: 0 auto;
-    width: 70%;
+  font-size: 60px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  margin: 0 auto;
+  width: 70%;
 }
 
 .wlcm a {
-    color: inherit;
-    text-decoration: none;
-    box-shadow: inset 0 0 0 white, inset 0 -4px 0 white;
+  color: inherit;
+  text-decoration: none;
+  box-shadow: inset 0 0 0 white, inset 0 -4px 0 white;
 }
 
 .courses {
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 10px;
-    margin-top: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  margin-top: 0px;
 }
 
 .zeenaLeft,
 .zeenaRight {
-    position: absolute;
-    top: 80px;
-    z-index: 6;
+  position: absolute;
+  top: 80px;
+  z-index: 6;
 }
 
 .zeenaLeft {
-    left: 5%;
+  left: 5%;
 }
 
 .zeenaRight {
-    right: 5%;
+  right: 5%;
 }
 
 #fanoos {
-    width: 40px;
+  width: 40px;
 }
 
 .announcement {
-    background: #0078e3;
-    margin: 2.5% 15%;
-    padding: 15px;
-    border-radius: 15px;
-    font-size: 30px;
-    border: 6px solid white;
+  background: #0078e3;
+  margin: 2.5% 15%;
+  padding: 15px;
+  border-radius: 15px;
+  font-size: 30px;
+  border: 6px solid white;
 }
 
 .announcement a {
-    color: white;
-    text-decoration: none;
-    box-shadow: inset 0 0px 0 white, inset 0 -2px 0 white;
+  color: white;
+  text-decoration: none;
+  box-shadow: inset 0 0px 0 white, inset 0 -2px 0 white;
 }
 
 #os {
-    display: block;
-    margin: 20px auto;
-    margin-bottom: 0;
-    width: 15%;
+  display: block;
+  margin: 20px auto;
+  margin-bottom: 0;
+  width: 15%;
 }
 
 #thrd,
 #thrd a {
-    font-size: 20px;
-    margin-top: 30px;
-    color: white;
+  font-size: 20px;
+  margin-top: 30px;
+  color: white;
 }
 
 #hilal-div {
-    position: absolute;
-    margin: 0 16%;
-    left: 0;
+  position: absolute;
+  margin: 0 16%;
+  left: 0;
 }
 
 #hilal {
-    width: 50px;
-    position: relative;
-    top: 20px;
-    left: 2px;
+  width: 50px;
+  position: relative;
+  top: 20px;
+  left: 2px;
 }
 
 #issues {
-    margin-top: 30px;
-    text-align: center;
-    color: white;
-    font-weight: 500;
-    font-size: 20px;
-    animation: fromDown 1.5s;
+  margin-top: 30px;
+  text-align: center;
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+  animation: fromDown 1.5s;
 }
 
 .sponsor {
-    margin: 0 auto;
-    margin-top: 20px;
-    margin-bottom: -20px;
-    width: 70%;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: -20px;
+  width: 70%;
 }
 
 .sponsor img {
-    width: 100%;
+  width: 100%;
 }
 
 @media (max-width: 1000px) {
-    #hilal {
-        left: 4px;
-    }
+  #hilal {
+    left: 4px;
+  }
 }
 
 @media (max-width: 600px) {
-    .wlcm {
-        font-size: 40px;
-        width: 90%;
-        margin: 0 auto;
-    }
-    .sponsor {
-        width: 90%;
-        margin-bottom: 0;
-    }
-    #fanoos {
-        width: 26px;
-    }
-    .announcement {
-        font-size: 18px;
-        border: 3px solid white;
-        margin: 3.5% 5%;
-    }
-    #hilal-div {
-        margin: 0 6%;
-        left: 0;
-    }
-    #hilal {
-        top: 0;
-        left: 15px;
-    }
-    #thrd,
-    #thrd a {
-        font-size: 16px;
-        margin-top: 20px;
-    }
-    #os {
-        width: 50%;
-        margin-top: 30px;
-    }
-    #issues {
-        margin-top: 30px;
-        font-size: 14px;
-    }
-    .announcement a {
-        box-shadow: inset 0 0px 0 white, inset 0 -1px 0 white;
-    }
+  .wlcm {
+    font-size: 40px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .sponsor {
+    width: 90%;
+    margin-bottom: 0;
+  }
+  #fanoos {
+    width: 26px;
+  }
+  .announcement {
+    font-size: 18px;
+    border: 3px solid white;
+    margin: 3.5% 5%;
+  }
+  #hilal-div {
+    margin: 0 6%;
+    left: 0;
+  }
+  #hilal {
+    top: 0;
+    left: 15px;
+  }
+  #thrd,
+  #thrd a {
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  #os {
+    width: 50%;
+    margin-top: 30px;
+  }
+  #issues {
+    margin-top: 30px;
+    font-size: 14px;
+  }
+  .announcement a {
+    box-shadow: inset 0 0px 0 white, inset 0 -1px 0 white;
+  }
 }
