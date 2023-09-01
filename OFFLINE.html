@@ -1,289 +1,297 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) [immediately after head tag]-->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-EKWFGLGKVR"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
 
-<head>
-    <meta charset="utf-8">
+      gtag('config', 'G-EKWFGLGKVR');
+    </script>
+    <!-- Google Ads [between head tags] -->
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8729859208925325"
+      crossorigin="anonymous"></script>
+
+    <meta charset="utf-8" />
 
     <script src="https://kit.fontawesome.com/e67747c5dd.js"></script>
 
-    <link rel="icon" href="assets/favicon.png" sizes="any" type="image/png">
+    <link rel="icon" href="assets/favicon.png" sizes="any" type="image/png" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="og:title" property="og:title" content="FCIS 2023">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Welcome to FCIS 2023, where you can find all the materials you want">
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LQ4C5TLEYJ"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'G-LQ4C5TLEYJ');
-    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="og:title" property="og:title" content="FCIS 2023" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Welcome to FCIS 2023, where you can find all the materials you want" />
 
     <style>
-        @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-        @keyframes fromUp {
-            from {
-                opacity: 0;
-                transform: translateY(-70px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+      @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+      @keyframes fromUp {
+        from {
+          opacity: 0;
+          transform: translateY(-70px);
         }
-        
-        .palettes {
-            color: #18293b;
-            color: #0078E3;
-            color: #4ADEDE;
+        to {
+          opacity: 1;
+          transform: translateY(0);
         }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-        }
-        
-        body {
-            --stripe: #18293b;
-            --bg: #142333;
-            background: linear-gradient(135deg, var(--bg) 25%, transparent 25%) -50px 0, linear-gradient(225deg, var(--bg) 25%, transparent 25%) -50px 0, linear-gradient(315deg, var(--bg) 25%, transparent 25%), linear-gradient(45deg, var(--bg) 25%, transparent 25%);
-            background-size: 100px 100px;
-            background-color: var(--stripe);
-        }
-        
-        nav {
-            display: flex;
-            height: 80px;
-            width: 100%;
-            background: #0078E3;
-            align-items: center;
-            justify-content: space-between;
-            padding: 0 30px 0 80px;
-            flex-wrap: wrap;
-        }
-        
-        nav .logo {
-            color: #fff;
-            font-size: 45px;
-            font-weight: 800;
-            font-family: 'Poppins';
-        }
-        
-        nav .logo:hover {
-            transform: scale(1.1);
-            transition: all 0.5s;
-        }
-        
-        nav ul {
-            display: flex;
-            flex-wrap: wrap;
-            list-style: none;
-        }
-        
-        nav ul li {
-            margin: 0px 2px;
-        }
-        
+      }
+
+      .palettes {
+        color: #18293b;
+        color: #0078e3;
+        color: #4adede;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+      }
+
+      body {
+        --stripe: #18293b;
+        --bg: #142333;
+        background: linear-gradient(135deg, var(--bg) 25%, transparent 25%) -50px
+            0,
+          linear-gradient(225deg, var(--bg) 25%, transparent 25%) -50px 0,
+          linear-gradient(315deg, var(--bg) 25%, transparent 25%),
+          linear-gradient(45deg, var(--bg) 25%, transparent 25%);
+        background-size: 100px 100px;
+        background-color: var(--stripe);
+      }
+
+      nav {
+        display: flex;
+        height: 80px;
+        width: 100%;
+        background: #0078e3;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 30px 0 80px;
+        flex-wrap: wrap;
+      }
+
+      nav .logo {
+        color: #fff;
+        font-size: 45px;
+        font-weight: 800;
+        font-family: 'Poppins';
+      }
+
+      nav .logo:hover {
+        transform: scale(1.1);
+        transition: all 0.5s;
+      }
+
+      nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+      }
+
+      nav ul li {
+        margin: 0px 2px;
+      }
+
+      nav ul li a {
+        color: #f2f2f2;
+        text-decoration: none;
+        font-size: 26px;
+        font-weight: 300;
+        padding: 8px 10px;
+        border-radius: 5px;
+        animation: fromUp 0.3s;
+        font-family: 'Barlow Condensed', sans-serif;
+      }
+
+      nav ul li a.active,
+      nav ul li a:hover {
+        color: #293c50;
+        background: #fff;
+      }
+
+      nav ul li a.active {
+        font-weight: 500;
+        font-style: italic;
+      }
+
+      nav .menu-btn i {
+        color: #fff;
+        font-size: 22px;
+        cursor: pointer;
+        display: none;
+      }
+
+      input[type='checkbox'] {
+        display: none;
+      }
+
+      .content {
+        text-align: center;
+        width: 100%;
+        padding: 30px;
+        color: white;
+        min-height: calc(100vh - 150px);
+      }
+
+      footer {
+        background: rgba(255, 255, 255, 0.1);
+        color: white;
+        font-size: 18px;
+        letter-spacing: 1px;
+        text-align: center;
+        margin: auto;
+        margin-bottom: 10px;
+        padding: 10px;
+      }
+
+      @media (max-width: 1300px) {
         nav ul li a {
-            color: #f2f2f2;
-            text-decoration: none;
-            font-size: 26px;
-            font-weight: 300;
-            padding: 8px 10px;
-            border-radius: 5px;
-            animation: fromUp 0.3s;
-            font-family: 'Barlow Condensed', sans-serif;
+          font-size: 20px;
         }
-        
-        nav ul li a.active,
-        nav ul li a:hover {
-            color: #293C50;
-            background: #fff;
+      }
+
+      @media (max-width: 1200px) {
+        nav {
+          padding: 0 40px 0 50px;
         }
-        
-        nav ul li a.active {
-            font-weight: 500;
-            font-style: italic;
+        nav .logo {
+          font-size: 40px;
         }
-        
         nav .menu-btn i {
-            color: #fff;
-            font-size: 22px;
-            cursor: pointer;
-            display: none;
+          display: block;
         }
-        
-        input[type="checkbox"] {
-            display: none;
+        #click:checked ~ .menu-btn i:before {
+          content: '\f00d';
         }
-        
+        nav ul {
+          position: fixed;
+          top: 80px;
+          left: -100%;
+          background: #293c50;
+          height: 100vh;
+          width: 100%;
+          text-align: center;
+          display: block;
+          transition: all 0.3s ease;
+        }
+        #click:checked ~ ul {
+          left: 0;
+        }
+        nav ul li {
+          width: 100%;
+          margin: 40px 0;
+        }
+        nav ul li a {
+          width: 100%;
+          margin-left: -100%;
+          display: block;
+          font-size: 32px;
+          transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+        #click:checked ~ ul li a {
+          margin-left: 0px;
+        }
+        nav ul li a.active {
+          background: none;
+          color: #4adede;
+          font-size: 50px;
+          font-weight: 600;
+        }
+        nav ul li a:hover {
+          background: none;
+          color: #4adede;
+          font-size: 40px;
+          transition: 0.3s;
+          transition-timing-function: ease-in-out;
+        }
         .content {
-            text-align: center;
-            width: 100%;
-            padding: 30px;
-            color: white;
-            min-height: calc(100vh - 150px);
+          min-height: calc(100vh - 220px);
         }
-        
         footer {
-            background: rgba(255, 255, 255, 0.1);
-            color: white;
-            font-size: 18px;
-            letter-spacing: 1px;
-            text-align: center;
-            margin: auto;
-            margin-bottom: 10px;
-            padding: 10px;
+          font-size: 10px;
         }
-        
-        @media (max-width: 1300px) {
-            nav ul li a {
-                font-size: 20px;
-            }
-        }
-        
-        @media (max-width: 1200px) {
-            nav {
-                padding: 0 40px 0 50px;
-            }
-            nav .logo {
-                font-size: 40px;
-            }
-            nav .menu-btn i {
-                display: block;
-            }
-            #click:checked~.menu-btn i:before {
-                content: "\f00d";
-            }
-            nav ul {
-                position: fixed;
-                top: 80px;
-                left: -100%;
-                background: #293C50;
-                height: 100vh;
-                width: 100%;
-                text-align: center;
-                display: block;
-                transition: all 0.3s ease;
-            }
-            #click:checked~ul {
-                left: 0;
-            }
-            nav ul li {
-                width: 100%;
-                margin: 40px 0;
-            }
-            nav ul li a {
-                width: 100%;
-                margin-left: -100%;
-                display: block;
-                font-size: 32px;
-                transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-            }
-            #click:checked~ul li a {
-                margin-left: 0px;
-            }
-            nav ul li a.active {
-                background: none;
-                color: #4ADEDE;
-                font-size: 50px;
-                font-weight: 600;
-            }
-            nav ul li a:hover {
-                background: none;
-                color: #4ADEDE;
-                font-size: 40px;
-                transition: 0.3s;
-                transition-timing-function: ease-in-out;
-            }
-            .content {
-                min-height: calc(100vh - 220px);
-            }
-            footer {
-                font-size: 10px;
-            }
-        }
-        
-        #oops {
-            font-size: 50px;
-            font-weight: 700;
-        }
-        
-        #pnf {
-            font-size: 30px;
-            font-weight: 500;
-            margin-bottom: 30px;
-        }
-        
-        button {
-            padding: 20px 40px;
-            font-size: 30px;
-            background-color: #0078E3;
-            border-radius: 15px;
-            border: none;
-            color: white;
-            transition: all .2s ease-in-out;
-        }
-        
-        button:hover {
-            cursor: pointer;
-            transform: scale(1.1);
-        }
+      }
+
+      #oops {
+        font-size: 50px;
+        font-weight: 700;
+      }
+
+      #pnf {
+        font-size: 30px;
+        font-weight: 500;
+        margin-bottom: 30px;
+      }
+
+      button {
+        padding: 20px 40px;
+        font-size: 30px;
+        background-color: #0078e3;
+        border-radius: 15px;
+        border: none;
+        color: white;
+        transition: all 0.2s ease-in-out;
+      }
+
+      button:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+      }
     </style>
 
     <title>You're Offline</title>
-</head>
+  </head>
 
-<body>
-    <nav>
-        <div class="logo">
-            <a href="index.html" style="text-decoration: none; color: white;">
-              FCIS 2023
-            </a>
-        </div>
-        <input type="checkbox" id="click">
-        <label for="click" class="menu-btn">
-        <i class="fas fa-bars"></i>
-      </label>
-        <ul>
-            <li><a href="ds.html" title="Data Structures">Data Structures</a></li>
-            <li><a href="ai.html" title="Artificial Intelligence">Artificial Intelligence</a></li>
-            <li><a href="la.html" title="Linear Algebra">Linear Algebra</a></li>
-            <li><a href="ca.html" title="Computer Architecture">Computer Architecture</a></li>
-            <li><a href="or.html" title="Operations Research">Operations Research</a></li>
-        </ul>
-    </nav>
+  <body>
+    <header>
+      <a href="/">FCIS 2023 <sup>4th</sup></a>
+    </header>
+
     <div class="content">
-        <p id="oops"> OOPS!</p>
-        <p id="pnf">
-            You are offline <br> Click the button below to try reloading
-        </p>
-        <button type="button">⤾ Reload</button>
-
+      <p id="oops">OOPS!</p>
+      <p id="pnf">
+        You are offline <br />
+        Click the button below to try reloading
+      </p>
+      <button type="button">⤾ Reload</button>
     </div>
 
     <!--Footer-->
     <footer>
-        Developed and maintained by
-        <a href="https://github.com/omarr45/" target="_blank">Omar AbdulRahman</a> - 2021
+      Developed and maintained by
+      <a href="https://omar45.com/" target="_blank">Omar AbdulRahman</a>
     </footer>
 
     <script>
-        document.querySelector("button").addEventListener("click", () => {
-            window.location.reload();
-        });
+      document.querySelector('button').addEventListener('click', () => {
+        window.location.reload();
+      });
     </script>
 
-</body>
-
+    <!-- Buy me a coffee widget -->
+    <script
+      data-name="BMC-Widget"
+      data-cfasync="false"
+      src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
+      data-id="omar45"
+      data-description="Support me on Buy me a coffee!"
+      data-message="Thanks for visiting, you can support me here"
+      data-color="#FFDD00"
+      data-position="Right"
+      data-x_margin="18"
+      data-y_margin="18"></script>
+  </body>
 </html>

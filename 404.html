@@ -1,85 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) [immediately after head tag]-->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-EKWFGLGKVR"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
 
-<head>
-    <meta charset="utf-8">
+      gtag('config', 'G-EKWFGLGKVR');
+    </script>
+    <!-- Google Ads [between head tags] -->
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8729859208925325"
+      crossorigin="anonymous"></script>
+
+    <meta charset="utf-8" />
 
     <script src="https://kit.fontawesome.com/e67747c5dd.js"></script>
 
-    <!-- <script data-ad-client="ca-pub-8729859208925325" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/common.css" />
+    <link rel="stylesheet" href="styles/404.css" />
+    <link rel="icon" href="assets/favicon.png" sizes="any" type="image/png" />
 
-    <link rel="stylesheet" href="styles/common.css">
-    <link rel="stylesheet" href="styles/404.css">
-    <link rel="icon" href="assets/favicon.png" sizes="any" type="image/png">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="og:title" property="og:title" content="FCIS 2023">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="og:title" property="og:title" content="FCIS 2023" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#0078E3" />
 
-    <meta name="description" content="Welcome to FCIS 2023, where you can find all the materials you want">
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LQ4C5TLEYJ"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'G-LQ4C5TLEYJ');
-    </script>
+    <meta
+      name="description"
+      content="Welcome to FCIS 2023, where you can find all the materials you want" />
 
     <title>Page Not Found</title>
-</head>
+  </head>
 
-<body>
-    <nav>
-        <div class="logo">
-            <a href="index.html" style="text-decoration: none; color: white;">
-              FCIS 2023
-            </a>
-        </div>
-        <input type="checkbox" id="click">
-        <label for="click" class="menu-btn">
-        <i class="fas fa-bars"></i>
-      </label>
-        <ul>
-            <li><a href="ds.html" title="Data Structures">Data Structures</a></li>
-            <li><a href="ai.html" title="Artificial Intelligence">Artificial Intelligence</a></li>
-            <li><a href="la.html" title="Linear Algebra">Linear Algebra</a></li>
-            <li><a href="ca.html" title="Computer Architecture">Computer Architecture</a></li>
-            <li><a href="or.html" title="Operations Research">Operations Research</a></li>
-        </ul>
-    </nav>
+  <body>
+    <header>
+      <a href="/">FCIS 2023 <sup>4th</sup></a>
+    </header>
+
     <div class="content">
-
-        <p id="oops"> OOPS!</p>
-        <p id="pnf">
-            Page not found, go back to
-            <a href="index.html"> home </a>
-        </p>
-        <div id="errorImg">
-            <img src="assets/404.png" width="100%">
-        </div>
-
-        <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
-        <!-- FirstAdTest -->
-        <!-- <ins class="adsbygoogle" style="display:block; height: 120px;" data-ad-client="ca-pub-8729859208925325" data-ad-slot="6565956232" data-ad-format="auto" data-full-width-responsive="true"></ins>
-        <script>
-            (adsbygoogle = window.adsbygoogle || []).push({});
-        </script> -->
-
+      <p id="oops">OOPS!</p>
+      <p id="pnf">
+        Page not found, go back to
+        <a href="index.html"> home </a>
+      </p>
+      <div id="errorImg">
+        <img src="assets/404.png" width="100%" />
+      </div>
     </div>
 
     <!--Footer-->
     <footer>
-        Developed and maintained by
-        <a href="https://github.com/omarr45/" target="_blank">Omar AbdulRahman</a> - 2021
+      Developed and maintained by
+      <a href="https://omar45.com/" target="_blank">Omar AbdulRahman</a>
     </footer>
 
-</body>
-
+    <!-- Buy me a coffee widget -->
+    <script
+      data-name="BMC-Widget"
+      data-cfasync="false"
+      src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
+      data-id="omar45"
+      data-description="Support me on Buy me a coffee!"
+      data-message="Thanks for visiting, you can support me here"
+      data-color="#FFDD00"
+      data-position="Right"
+      data-x_margin="18"
+      data-y_margin="18"></script>
+  </body>
 </html>

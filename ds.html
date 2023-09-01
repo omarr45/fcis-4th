@@ -1,371 +1,560 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) [immediately after head tag]-->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-EKWFGLGKVR"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
 
-<head>
-    <meta charset="utf-8">
+      gtag('config', 'G-EKWFGLGKVR');
+    </script>
+    <!-- Google Ads [between head tags] -->
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8729859208925325"
+      crossorigin="anonymous"></script>
 
-    <script src="https://kit.fontawesome.com/e38234dfec.js" crossorigin="anonymous"></script>
-    <script data-ad-client="ca-pub-8729859208925325" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <meta charset="utf-8" />
 
+    <script
+      src="https://kit.fontawesome.com/e38234dfec.js"
+      crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="styles/common.css">
-    <link rel="stylesheet" href="styles/commonCourse.css">
-    <link rel="icon" href="assets/favicon.png" sizes="any" type="image/png">
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/common.css" />
+    <link rel="stylesheet" href="styles/commonCourse.css" />
+    <link rel="icon" href="assets/favicon.png" sizes="any" type="image/png" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="og:title" property="og:title" content="FCIS 2023">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="og:title" property="og:title" content="Data Structures" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#0078E3" />
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LQ4C5TLEYJ"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'G-LQ4C5TLEYJ');
-    </script>
-
     <title>Data Structures</title>
-</head>
+  </head>
 
-<body>
-    <nav>
-        <div class="logo">
-            <a href="index.html" style="text-decoration: none; color: white;">
-              FCIS 2023
-            </a>
-        </div>
-        <input type="checkbox" id="click">
-        <label for="click" class="menu-btn">
-        <i class="fas fa-bars"></i>
-      </label>
-        <ul>
-            <li><a href="ds.html" class="active" title="Data Structures">Data Structures</a></li>
-            <li><a href="ai.html" title="Artificial Intelligence">Artificial Intelligence</a></li>
-            <li><a href="la.html" title="Linear Algebra">Linear Algebra</a></li>
-            <li><a href="ca.html" title="Computer Architecture">Computer Architecture</a></li>
-            <li><a href="or.html" title="Operations Research">Operations Research</a></li>
-        </ul>
-    </nav>
+  <body>
+    <header>
+      <a href="/">FCIS 2023 <sup>4th</sup></a>
+    </header>
 
     <div class="content">
-
-        <!-- <div class="alert">
-            <p>
-                ** Testing Ads **
-            </p>
-        </div> -->
-
-        <div class="hdrs">
-            <div class="course"> Data Structures </div>
-            <div class="prof">
-                <a href="mailto:wedad.hussein@gmail.com"> Dr. Wedad Hussein</a>
-            </div>
+      <div class="hdrs">
+        <div class="course">Data Structures</div>
+        <div class="prof">
+          <a href="mailto:wedad.hussein@gmail.com"> Dr. Wedad Hussein</a>
         </div>
+      </div>
 
-        <div class="progress" id="progress">Progress :</div>
-        <div class="progressContainer">
-            <div class="progressBack" id="back">
-            </div>
-        </div>
+      <div class="progress" id="progress">Progress :</div>
+      <div class="progressContainer">
+        <div class="progressBack" id="back"></div>
+      </div>
 
-        <div class="exam">
-            <p>
-                <a href="https://drive.google.com/drive/folders/1f9KNE-ceAanujI579NUoWxEGLDb65ThJ"> Finals (2016, 2017, 2018) </a>
-            </p>
-            <p>
-                <a href="https://drive.google.com/drive/folders/19TP93YuZykREVRZMWn6aB-LCHQeKsXQR"> Old Quizzes </a>
-            </p>
-        </div>
+      <div class="exam">
+        <p>
+          <a
+            href="https://drive.google.com/drive/folders/1f9KNE-ceAanujI579NUoWxEGLDb65ThJ">
+            Finals (2016, 2017, 2018)
+          </a>
+        </p>
+        <p>
+          <a
+            href="https://drive.google.com/drive/folders/19TP93YuZykREVRZMWn6aB-LCHQeKsXQR">
+            Old Quizzes
+          </a>
+        </p>
+      </div>
 
-        <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
-        <!-- FirstAdTest -->
-        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8729859208925325" data-ad-slot="6565956232" data-ad-format="auto" data-full-width-responsive="true"></ins>
-        <script>
-            (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
+      <button class="accordion fixed">Resources</button>
+      <div class="panel">
+        <p>
+          <i class="fas fa-user-friends"></i> Microsoft Teams Code: 55mk72q ,
+          igfaaru
+        </p>
+        <p>
+          <i class="fas fa-play"></i>
+          <a
+            href="https://web.microsoftstream.com/channel/9143730f-5192-4a9b-8640-ce176ad20bf6"
+            target="_blank">
+            Microsoft Stream Channel
+          </a>
+        </p>
+        <p>
+          <i class="fas fa-star"></i>
+          <a
+            href="https://drive.google.com/drive/u/0/folders/1M0YgNI4-SaarTt4JAaW6Qe11ZGYtafPV"
+            target="_blank">
+            Old Data
+          </a>
+        </p>
+      </div>
 
-        <button class="accordion fixed">Resources</button>
-        <div class="panel">
-            <p>
-                <i class="fas fa-user-friends"></i> Microsoft Teams Code: 55mk72q , igfaaru
-            </p>
-            <p>
-                <i class="fas fa-play"></i>
-                <a href="https://web.microsoftstream.com/channel/9143730f-5192-4a9b-8640-ce176ad20bf6" target="_blank"> Microsoft Stream Channel </a>
-            </p>
-            <p>
-                <i class="fas fa-star"></i>
-                <a href="https://drive.google.com/drive/u/0/folders/1M0YgNI4-SaarTt4JAaW6Qe11ZGYtafPV" target="_blank"> Old Data </a>
-            </p>
-        </div>
+      <button class="accordion">Week 1</button>
+      <div class="panel">
+        <p>
+          <i class="fas fa-play-circle"></i>
+          <a
+            href="https://web.microsoftstream.com/video/3f4a2943-5a7f-4382-a6f9-430c0c90972f"
+            target="_blank"
+            class="addCheck"
+            >Lecture 1 (Video)</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file-download"></i>
+          <a href="materials/Dr/DS_L01.pptx" target="_blank" class="addCheck"
+            >Lecture 1 (PPTX)</a
+          >
+        </p>
+        <hr />
+        <p>
+          <i class="fas fa-plus-circle fa-lg"></i>
+          <a
+            ><b><u>Extras</u> &#8628;</b></a
+          >
+        </p>
+        <p>
+          <i class="fas fa-code"></i>
+          <a
+            href="https://drive.google.com/drive/folders/1EXi_YrQMADqvRvbKhUZAPgJKH1bGsPqW"
+            target="_blank"
+            class="addCheck"
+            >Lecture 1 (Code)</a
+          >
+        </p>
+      </div>
 
-        <button class="accordion">Week 1</button>
-        <div class="panel">
-            <p>
-                <i class="fas fa-play-circle"></i>
-                <a href="https://web.microsoftstream.com/video/3f4a2943-5a7f-4382-a6f9-430c0c90972f" target="_blank" class="addCheck">Lecture 1 (Video)</a>
-            </p>
-            <p>
-                <i class="fas fa-file-download"></i>
-                <a href="materials/Dr/DS_L01.pptx" target="_blank" class="addCheck">Lecture 1 (PPTX)</a>
-            </p>
-            <hr>
-            <p>
-                <i class="fas fa-plus-circle fa-lg"></i>
-                <a><b><u>Extras</u> &#8628;</b></a>
-            </p>
-            <p>
-                <i class="fas fa-code"></i>
-                <a href="https://drive.google.com/drive/folders/1EXi_YrQMADqvRvbKhUZAPgJKH1bGsPqW" target="_blank" class="addCheck">Lecture 1 (Code)</a>
-            </p>
-        </div>
+      <button class="accordion">Week 2</button>
+      <div class="panel">
+        <p>
+          <i class="fas fa-play-circle"></i>
+          <a
+            href="https://web.microsoftstream.com/video/caee0ddd-9ccc-4781-9407-333b5e05ccde"
+            target="_blank"
+            class="addCheck"
+            >Lecture 2 (Video)</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file-download"></i>
+          <a href="materials/Dr/DS_L02.pptx" target="_blank" class="addCheck"
+            >Lecture 2 (PPTX)</a
+          >
+        </p>
+        <hr />
+        <p>
+          <i class="fas fa-play-circle"></i>
+          <a
+            href="https://web.microsoftstream.com/video/8c1fa665-f98d-4375-80fa-2a032c408c05"
+            target="_blank"
+            class="addCheck"
+            >Lab 1 (Video)</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file-download"></i>
+          <a href="materials/Dr/DS_S01.pdf" target="_blank" class="addCheck"
+            >Lab 1 (PDF)</a
+          >
+        </p>
+        <hr />
+        <p>
+          <i class="fas fa-plus-circle fa-lg"></i>
+          <a
+            ><b><u>Extras</u> &#8628;</b></a
+          >
+        </p>
+        <p>
+          <i class="fas fa-code"></i>
+          <a
+            href="https://drive.google.com/drive/folders/1JZ2Fozgxjbw6-MwuBbX4U4Ys3A6qRiXg"
+            target="_blank"
+            class="addCheck"
+            >Lecture 2 (Code)</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file-download"></i>
+          <a
+            href="materials/Dr/Extras/DS_L02_Infix.pdf"
+            target="_blank"
+            class="addCheck"
+            >Infix To Postfix Examples</a
+          >
+        </p>
+      </div>
 
-        <button class="accordion">Week 2</button>
-        <div class="panel">
-            <p>
-                <i class="fas fa-play-circle"></i>
-                <a href="https://web.microsoftstream.com/video/caee0ddd-9ccc-4781-9407-333b5e05ccde" target="_blank" class="addCheck">Lecture 2 (Video)</a>
-            </p>
-            <p>
-                <i class="fas fa-file-download"></i>
-                <a href="materials/Dr/DS_L02.pptx" target="_blank" class="addCheck">Lecture 2 (PPTX)</a>
-            </p>
-            <hr>
-            <p>
-                <i class="fas fa-play-circle"></i>
-                <a href="https://web.microsoftstream.com/video/8c1fa665-f98d-4375-80fa-2a032c408c05" target="_blank" class="addCheck">Lab 1 (Video)</a>
-            </p>
-            <p>
-                <i class="fas fa-file-download"></i>
-                <a href="materials/Dr/DS_S01.pdf" target="_blank" class="addCheck">Lab 1 (PDF)</a>
-            </p>
-            <hr>
-            <p>
-                <i class="fas fa-plus-circle fa-lg"></i>
-                <a><b><u>Extras</u> &#8628;</b></a>
-            </p>
-            <p>
-                <i class="fas fa-code"></i>
-                <a href="https://drive.google.com/drive/folders/1JZ2Fozgxjbw6-MwuBbX4U4Ys3A6qRiXg" target="_blank" class="addCheck">Lecture 2 (Code)</a>
-            </p>
-            <p>
-                <i class="fas fa-file-download"></i>
-                <a href="materials/Dr/Extras/DS_L02_Infix.pdf" target="_blank" class="addCheck">Infix To Postfix Examples</a>
-            </p>
-        </div>
+      <button class="accordion">Week 3</button>
+      <div class="panel">
+        <p>
+          <i class="fas fa-play-circle"></i>
+          <a
+            href="https://web.microsoftstream.com/video/5efdd6bf-99a3-4335-8ed8-49ed9c4ab011"
+            target="_blank"
+            class="addCheck"
+            >Lecture 3 - Part 1 (Video)</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-play-circle"></i>
+          <a
+            href="https://web.microsoftstream.com/video/0fe49614-be21-4d9b-bcd7-77a9ad2d8cc8"
+            target="_blank"
+            class="addCheck"
+            >Lecture 3 - Part 2 (Video)</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file-download"></i>
+          <a href="materials/Dr/DS_L03.pptx" target="_blank" class="addCheck"
+            >Lecture 3 (PPTX)</a
+          >
+        </p>
+        <hr />
+        <p>
+          <i class="fas fa-play-circle"></i>
+          <a
+            href="https://web.microsoftstream.com/video/166a417d-b176-4a37-881c-e89c94e1043d"
+            target="_blank"
+            class="addCheck"
+            >Lab 2 (Video)</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file-download"></i>
+          <a href="materials/Dr/DS_S02.pdf" target="_blank" class="addCheck"
+            >Lab 2 (PDF)</a
+          >
+        </p>
+        <hr />
+        <p>
+          <i class="fas fa-plus-circle fa-lg"></i>
+          <a
+            ><b><u>Extras</u> &#8628;</b></a
+          >
+        </p>
+        <p>
+          <i class="fas fa-code"></i>
+          <a
+            href="https://drive.google.com/drive/folders/1RM5FOlXaOpJ7pVbYA5oPm-azMd_v1loy"
+            target="_blank"
+            class="addCheck"
+            >Lecture 3 (Code)</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file-download"></i>
+          <a
+            href="materials/Dr/Extras/DS_L03_Queues.pdf"
+            target="_blank"
+            class="addCheck"
+            >Queues</a
+          >
+        </p>
+      </div>
 
-        <button class="accordion">Week 3</button>
-        <div class="panel">
-            <p>
-                <i class="fas fa-play-circle"></i>
-                <a href="https://web.microsoftstream.com/video/5efdd6bf-99a3-4335-8ed8-49ed9c4ab011" target="_blank" class="addCheck">Lecture 3 - Part 1 (Video)</a>
-            </p>
-            <p>
-                <i class="fas fa-play-circle"></i>
-                <a href="https://web.microsoftstream.com/video/0fe49614-be21-4d9b-bcd7-77a9ad2d8cc8" target="_blank" class="addCheck">Lecture 3 - Part 2 (Video)</a>
-            </p>
-            <p>
-                <i class="fas fa-file-download"></i>
-                <a href="materials/Dr/DS_L03.pptx" target="_blank" class="addCheck">Lecture 3 (PPTX)</a>
-            </p>
-            <hr>
-            <p>
-                <i class="fas fa-play-circle"></i>
-                <a href="https://web.microsoftstream.com/video/166a417d-b176-4a37-881c-e89c94e1043d" target="_blank" class="addCheck">Lab 2 (Video)</a>
-            </p>
-            <p>
-                <i class="fas fa-file-download"></i>
-                <a href="materials/Dr/DS_S02.pdf" target="_blank" class="addCheck">Lab 2 (PDF)</a>
-            </p>
-            <hr>
-            <p>
-                <i class="fas fa-plus-circle fa-lg"></i>
-                <a><b><u>Extras</u> &#8628;</b></a>
-            </p>
-            <p>
-                <i class="fas fa-code"></i>
-                <a href="https://drive.google.com/drive/folders/1RM5FOlXaOpJ7pVbYA5oPm-azMd_v1loy" target="_blank" class="addCheck">Lecture 3 (Code)</a>
-            </p>
-            <p>
-                <i class="fas fa-file-download"></i>
-                <a href="materials/Dr/Extras/DS_L03_Queues.pdf" target="_blank" class="addCheck">Queues</a>
-            </p>
-        </div>
+      <button class="accordion">Week 4</button>
+      <div class="panel">
+        <p>
+          <i class="fas fa-play-circle"></i>
+          <a
+            href="https://web.microsoftstream.com/video/5a9dcbe3-12d5-4f97-91bf-32c8f099b04e"
+            target="_blank"
+            class="addCheck"
+            >Lecture 4 (Video)</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file-download"></i>
+          <a href="materials/Dr/DS_L04.pptx" target="_blank" class="addCheck"
+            >Lecture 4 (PPTX)</a
+          >
+        </p>
+        <hr />
+        <p>
+          <i class="fas fa-play-circle"></i>
+          <a
+            href="https://web.microsoftstream.com/video/ceb673ac-0eb3-4ded-be2d-9b0c9c760333"
+            target="_blank"
+            class="addCheck"
+            >Lab 3 (Video)</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file-download"></i>
+          <a href="materials/Dr/DS_S03.pdf" target="_blank" class="addCheck"
+            >Lab 3 (PDF)</a
+          >
+        </p>
+        <hr />
+        <p>
+          <i class="fas fa-plus-circle fa-lg"></i>
+          <a
+            ><b><u>Extras</u> &#8628;</b></a
+          >
+        </p>
+        <p>
+          <i class="fas fa-code"></i>
+          <a
+            href="https://drive.google.com/drive/folders/18-SN3sVfELdlSuXODjDno_-zoGIAGo2s?usp=sharing"
+            target="_blank"
+            class="addCheck"
+            >Lecture 4 (Code)</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file-download"></i>
+          <a
+            href="materials/Dr/Extras/DS_L04_ArrayLists.docx"
+            target="_blank"
+            class="addCheck"
+            >Lecture Notes</a
+          >
+        </p>
+      </div>
 
-        <button class="accordion">Week 4</button>
-        <div class="panel">
-            <p>
-                <i class="fas fa-play-circle"></i>
-                <a href="https://web.microsoftstream.com/video/5a9dcbe3-12d5-4f97-91bf-32c8f099b04e" target="_blank" class="addCheck">Lecture 4 (Video)</a>
-            </p>
-            <p>
-                <i class="fas fa-file-download"></i>
-                <a href="materials/Dr/DS_L04.pptx" target="_blank" class="addCheck">Lecture 4 (PPTX)</a>
-            </p>
-            <hr>
-            <p>
-                <i class="fas fa-play-circle"></i>
-                <a href="https://web.microsoftstream.com/video/ceb673ac-0eb3-4ded-be2d-9b0c9c760333" target="_blank" class="addCheck">Lab 3 (Video)</a>
-            </p>
-            <p>
-                <i class="fas fa-file-download"></i>
-                <a href="materials/Dr/DS_S03.pdf" target="_blank" class="addCheck">Lab 3 (PDF)</a>
-            </p>
-            <hr>
-            <p>
-                <i class="fas fa-plus-circle fa-lg"></i>
-                <a><b><u>Extras</u> &#8628;</b></a>
-            </p>
-            <p>
-                <i class="fas fa-code"></i>
-                <a href="https://drive.google.com/drive/folders/18-SN3sVfELdlSuXODjDno_-zoGIAGo2s?usp=sharing" target="_blank" class="addCheck">Lecture 4 (Code)</a>
-            </p>
-            <p>
-                <i class="fas fa-file-download"></i>
-                <a href="materials/Dr/Extras/DS_L04_ArrayLists.docx" target="_blank" class="addCheck">Lecture Notes</a>
-            </p>
-        </div>
+      <button class="accordion">Week 5</button>
+      <div class="panel">
+        <p>
+          <i class="fas fa-play-circle"></i>
+          <a
+            href="https://web.microsoftstream.com/video/b90044ed-f4bc-425a-8724-33a7ef8831bb"
+            target="_blank"
+            class="addCheck"
+            >Lecture 5 (Video)</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file-download"></i>
+          <a href="materials/Dr/DS_L05.pptx" target="_blank" class="addCheck"
+            >Lecture 5 (PPTX)</a
+          >
+        </p>
+        <hr />
+        <p>
+          <i class="fas fa-play-circle"></i>
+          <a
+            href="https://web.microsoftstream.com/video/f9912366-c539-4f6c-b805-f75a7ed0e2b1"
+            target="_blank"
+            class="addCheck"
+            >Lab 4 (Video)</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file-download"></i>
+          <a href="materials/Dr/DS_S04.pdf" target="_blank" class="addCheck"
+            >Lab 4 (PDF)</a
+          >
+        </p>
+        <hr />
+        <p>
+          <i class="fas fa-plus-circle fa-lg"></i>
+          <a
+            ><b><u>Extras</u> &#8628;</b></a
+          >
+        </p>
+        <p>
+          <i class="fas fa-code"></i>
+          <a
+            href="https://drive.google.com/drive/folders/11YtSrDj6-KBF1PKpqMymZFo8dXWTBE8H?usp=sharing"
+            target="_blank"
+            class="addCheck"
+            >Lecture 5 (Code)</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file-download"></i>
+          <a
+            href="materials/Dr/Extras/DS_05_LinkedLists.docx"
+            target="_blank"
+            class="addCheck"
+            >Lecture Notes</a
+          >
+        </p>
+      </div>
 
-        <button class="accordion">Week 5</button>
-        <div class="panel">
-            <p>
-                <i class="fas fa-play-circle"></i>
-                <a href="https://web.microsoftstream.com/video/b90044ed-f4bc-425a-8724-33a7ef8831bb" target="_blank" class="addCheck">Lecture 5 (Video)</a>
-            </p>
-            <p>
-                <i class="fas fa-file-download"></i>
-                <a href="materials/Dr/DS_L05.pptx" target="_blank" class="addCheck">Lecture 5 (PPTX)</a>
-            </p>
-            <hr>
-            <p>
-                <i class="fas fa-play-circle"></i>
-                <a href="https://web.microsoftstream.com/video/f9912366-c539-4f6c-b805-f75a7ed0e2b1" target="_blank" class="addCheck">Lab 4 (Video)</a>
-            </p>
-            <p>
-                <i class="fas fa-file-download"></i>
-                <a href="materials/Dr/DS_S04.pdf" target="_blank" class="addCheck">Lab 4 (PDF)</a>
-            </p>
-            <hr>
-            <p>
-                <i class="fas fa-plus-circle fa-lg"></i>
-                <a><b><u>Extras</u> &#8628;</b></a>
-            </p>
-            <p>
-                <i class="fas fa-code"></i>
-                <a href="https://drive.google.com/drive/folders/11YtSrDj6-KBF1PKpqMymZFo8dXWTBE8H?usp=sharing" target="_blank" class="addCheck">Lecture 5 (Code)</a>
-            </p>
-            <p>
-                <i class="fas fa-file-download"></i>
-                <a href="materials/Dr/Extras/DS_05_LinkedLists.docx" target="_blank" class="addCheck">Lecture Notes</a>
-            </p>
-        </div>
+      <button class="accordion">Week 6</button>
+      <div class="panel">
+        <p>
+          <i class="fas fa-play-circle"></i>
+          <a
+            href="https://web.microsoftstream.com/video/81ff5774-297c-4bd0-8b80-75a40657a7f9"
+            target="_blank"
+            class="addCheck"
+            >Lecture 6 (Video)</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file-download"></i>
+          <a href="materials/Dr/DS_L06.pptx" target="_blank" class="addCheck"
+            >Lecture 6 (PPTX)</a
+          >
+        </p>
+        <hr />
+        <p>
+          <i class="fas fa-play-circle"></i>
+          <a
+            href="https://web.microsoftstream.com/video/fe54b581-fcb6-4db5-b066-5a50221f328c"
+            target="_blank"
+            class="addCheck"
+            >Lab 5 (Video)</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file-download"></i>
+          <a href="materials/Dr/DS_S05.pdf" target="_blank" class="addCheck"
+            >Lab 5 (PDF)</a
+          >
+        </p>
+        <hr />
+        <p>
+          <i class="fas fa-plus-circle fa-lg"></i>
+          <a
+            ><b><u>Extras</u> &#8628;</b></a
+          >
+        </p>
+        <p>
+          <i class="fas fa-code"></i>
+          <a
+            href="https://drive.google.com/drive/folders/1D3b71ewIe5n6Q4crJonjoo0Tfb-sL2MF?usp=sharing"
+            target="_blank"
+            class="addCheck"
+            >Lecture 6 (Code)</a
+          >
+        </p>
+      </div>
 
-        <button class="accordion">Week 6</button>
-        <div class="panel">
-            <p>
-                <i class="fas fa-play-circle"></i>
-                <a href="https://web.microsoftstream.com/video/81ff5774-297c-4bd0-8b80-75a40657a7f9" target="_blank" class="addCheck">Lecture 6 (Video)</a>
-            </p>
-            <p>
-                <i class="fas fa-file-download"></i>
-                <a href="materials/Dr/DS_L06.pptx" target="_blank" class="addCheck">Lecture 6 (PPTX)</a>
-            </p>
-            <hr>
-            <p>
-                <i class="fas fa-play-circle"></i>
-                <a href="https://web.microsoftstream.com/video/fe54b581-fcb6-4db5-b066-5a50221f328c" target="_blank" class="addCheck">Lab 5 (Video)</a>
-            </p>
-            <p>
-                <i class="fas fa-file-download"></i>
-                <a href="materials/Dr/DS_S05.pdf" target="_blank" class="addCheck">Lab 5 (PDF)</a>
-            </p>
-            <hr>
-            <p>
-                <i class="fas fa-plus-circle fa-lg"></i>
-                <a><b><u>Extras</u> &#8628;</b></a>
-            </p>
-            <p>
-                <i class="fas fa-code"></i>
-                <a href="https://drive.google.com/drive/folders/1D3b71ewIe5n6Q4crJonjoo0Tfb-sL2MF?usp=sharing" target="_blank" class="addCheck">Lecture 6 (Code)</a>
-            </p>
-        </div>
+      <button class="accordion">Week 7</button>
+      <div class="panel">
+        <p>
+          <i class="fas fa-play-circle"></i>
+          <a
+            href="https://web.microsoftstream.com/video/042f0deb-2346-4398-8f85-41096ed9de61"
+            target="_blank"
+            class="addCheck"
+            >Lab 6 (Video)</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file-download"></i>
+          <a href="materials/Dr/DS_S06.pdf" target="_blank" class="addCheck"
+            >Lab 6 (PDF)</a
+          >
+        </p>
+        <hr />
+        <p>
+          <i class="fas fa-plus-circle fa-lg"></i>
+          <a
+            ><b><u>Extras</u> &#8628;</b></a
+          >
+        </p>
+        <p>
+          <i class="fas fa-code"></i>
+          <a
+            href="materials/Dr/Extras/DS_S06_LinkedStack.rar"
+            target="_blank"
+            class="addCheck"
+            >Lab 6 Code (rar)</a
+          >
+        </p>
+      </div>
 
-        <button class="accordion">Week 7</button>
-        <div class="panel">
-            <p>
-                <i class="fas fa-play-circle"></i>
-                <a href="https://web.microsoftstream.com/video/042f0deb-2346-4398-8f85-41096ed9de61" target="_blank" class="addCheck">Lab 6 (Video)</a>
-            </p>
-            <p>
-                <i class="fas fa-file-download"></i>
-                <a href="materials/Dr/DS_S06.pdf" target="_blank" class="addCheck">Lab 6 (PDF)</a>
-            </p>
-            <hr>
-            <p>
-                <i class="fas fa-plus-circle fa-lg"></i>
-                <a><b><u>Extras</u> &#8628;</b></a>
-            </p>
-            <p>
-                <i class="fas fa-code"></i>
-                <a href="materials/Dr/Extras/DS_S06_LinkedStack.rar" target="_blank" class="addCheck">Lab 6 Code (rar)</a>
-            </p>
-        </div>
-
-        <button class="accordion">Week 8</button>
-        <div class="panel">
-            <p>
-                <i class="fas fa-play-circle"></i>
-                <a href="https://web.microsoftstream.com/video/652ebd66-ec7d-4898-bfab-621b20943ed9" target="_blank" class="addCheck">Lecture 8 (Video)</a>
-            </p>
-            <p>
-                <i class="fas fa-file-download"></i>
-                <a href="materials/Dr/DS_L08.pptx" target="_blank" class="addCheck">Lecture 8 (PPTX)</a>
-            </p>
-            <hr>
-            <p>
-                <i class="fas fa-play-circle"></i>
-                <a href="https://web.microsoftstream.com/video/3fa7b2bd-2255-436c-b517-9b5aa517e738" target="_blank" class="addCheck">Lab 7 (Video)</a>
-            </p>
-            <p>
-                <i class="fas fa-file-download"></i>
-                <a href="materials/Dr/DS_S07.pptx" target="_blank" class="addCheck">Lab 7 (PPTX)</a>
-            </p>
-            <hr>
-            <p>
-                <i class="fas fa-plus-circle fa-lg"></i>
-                <a><b><u>Extras</u> &#8728;</b></a>
-            </p>
-            <p>
-                <i class="fas fa-code"></i>
-                <a href="https://drive.google.com/drive/folders/11WRGbgWHsXCV_3_SegCm09VwFFGCq6Xc?usp=sharing" target="_blank" class="addCheck">Lecture 8 (Code)</a>
-            </p>
-            <p>
-                <i class="fas fa-file-download"></i>
-                <a href="materials/Dr/Extras/DS_L08HashTables.docx" target="_blank" class="addCheck">Lecture Notes</a>
-            </p>
-            <p>
-                <i class="fas fa-code"></i>
-                <a href="materials/Dr/Extras/DS_S07_BSTs.rar" target="_blank" class="addCheck">Lab 7 Code (rar)</a>
-            </p>
-        </div>
-
+      <button class="accordion">Week 8</button>
+      <div class="panel">
+        <p>
+          <i class="fas fa-play-circle"></i>
+          <a
+            href="https://web.microsoftstream.com/video/652ebd66-ec7d-4898-bfab-621b20943ed9"
+            target="_blank"
+            class="addCheck"
+            >Lecture 8 (Video)</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file-download"></i>
+          <a href="materials/Dr/DS_L08.pptx" target="_blank" class="addCheck"
+            >Lecture 8 (PPTX)</a
+          >
+        </p>
+        <hr />
+        <p>
+          <i class="fas fa-play-circle"></i>
+          <a
+            href="https://web.microsoftstream.com/video/3fa7b2bd-2255-436c-b517-9b5aa517e738"
+            target="_blank"
+            class="addCheck"
+            >Lab 7 (Video)</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file-download"></i>
+          <a href="materials/Dr/DS_S07.pptx" target="_blank" class="addCheck"
+            >Lab 7 (PPTX)</a
+          >
+        </p>
+        <hr />
+        <p>
+          <i class="fas fa-plus-circle fa-lg"></i>
+          <a
+            ><b><u>Extras</u> &#8728;</b></a
+          >
+        </p>
+        <p>
+          <i class="fas fa-code"></i>
+          <a
+            href="https://drive.google.com/drive/folders/11WRGbgWHsXCV_3_SegCm09VwFFGCq6Xc?usp=sharing"
+            target="_blank"
+            class="addCheck"
+            >Lecture 8 (Code)</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file-download"></i>
+          <a
+            href="materials/Dr/Extras/DS_L08HashTables.docx"
+            target="_blank"
+            class="addCheck"
+            >Lecture Notes</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-code"></i>
+          <a
+            href="materials/Dr/Extras/DS_S07_BSTs.rar"
+            target="_blank"
+            class="addCheck"
+            >Lab 7 Code (rar)</a
+          >
+        </p>
+      </div>
     </div>
 
     <!--Footer-->
     <footer>
-        Developed and maintained by
-        <a href="https://github.com/omarr45/" target="_blank">Omar AbdulRahman</a> - 2021
+      Developed and maintained by
+      <a href="https://omar45.com/" target="_blank">Omar AbdulRahman</a>
     </footer>
 
     <script src="scripts/accordion.js"></script>
     <script src="scripts/check.js"></script>
-
-</body>
-
+    <!-- Buy me a coffee widget -->
+    <script
+      data-name="BMC-Widget"
+      data-cfasync="false"
+      src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
+      data-id="omar45"
+      data-description="Support me on Buy me a coffee!"
+      data-message="Thanks for visiting, you can support me here"
+      data-color="#FFDD00"
+      data-position="Right"
+      data-x_margin="18"
+      data-y_margin="18"></script>
+  </body>
 </html>

@@ -1,24 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Google tag (gtag.js) [immediately after head tag]-->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-EKWFGLGKVR"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'G-EKWFGLGKVR');
+    </script>
+    <!-- Google Ads [between head tags] -->
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8729859208925325"
+      crossorigin="anonymous"></script>
+
     <meta charset="utf-8" />
 
     <script
       src="https://kit.fontawesome.com/e38234dfec.js"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      data-ad-client="ca-pub-8729859208925325"
-      async
-      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
-    ></script>
+      crossorigin="anonymous"></script>
 
+    <link rel="stylesheet" href="styles/base.css" />
     <link rel="stylesheet" href="styles/common.css" />
     <link rel="stylesheet" href="styles/commonCourse.css" />
     <link rel="icon" href="assets/favicon.png" sizes="any" type="image/png" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="og:title" property="og:title" content="FCIS 2023" />
+    <meta
+      name="og:title"
+      property="og:title"
+      content="Artifical Intelligence" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#0078E3" />
 
@@ -26,60 +43,11 @@
   </head>
 
   <body>
-    <nav>
-      <div class="logo">
-        <a href="index.html" style="text-decoration: none; color: white">
-          FCIS 2023
-        </a>
-      </div>
-      <input type="checkbox" id="click" />
-      <label for="click" class="menu-btn">
-        <i class="fas fa-bars"></i>
-      </label>
-      <ul>
-        <li><a href="ds.html" title="Data Structures">Data Structures</a></li>
-        <li>
-          <a href="ai.html" class="active" title="Artificial Intelligence"
-            >Artificial Intelligence</a
-          >
-        </li>
-        <li><a href="la.html" title="Linear Algebra">Linear Algebra</a></li>
-        <li>
-          <a href="ca.html" title="Computer Architecture"
-            >Computer Architecture</a
-          >
-        </li>
-        <li>
-          <a href="or.html" title="Operations Research">Operations Research</a>
-        </li>
-      </ul>
-    </nav>
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-LQ4C5TLEYJ"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
-
-      gtag('config', 'G-LQ4C5TLEYJ');
-    </script>
+    <header>
+      <a href="/">FCIS 2023 <sup>4th</sup></a>
+    </header>
 
     <div class="content">
-      <!-- <div class="alert">
-            <p>
-                ** Testing Ads **
-            </p>
-        </div> -->
-      <!-- 
-        <script data-ad-client="ca-pub-8729859208925325" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
-
       <div class="hdrs">
         <div class="course">Artificial Intelligence</div>
         <div class="prof">
@@ -95,33 +63,17 @@
       <div class="exam">
         <p>
           <a
-            href="https://drive.google.com/drive/folders/1hti2lmyNQfQzUv2QFoaj1hThphhUEW6y"
-          >
+            href="https://drive.google.com/drive/folders/1hti2lmyNQfQzUv2QFoaj1hThphhUEW6y">
             Previous Finals
           </a>
         </p>
         <p>
           <a
-            href="https://drive.google.com/drive/folders/1ipKO4LmPJaib-Ws_9mZnQc2h2GHeGFmv"
-          >
+            href="https://drive.google.com/drive/folders/1ipKO4LmPJaib-Ws_9mZnQc2h2GHeGFmv">
             Revision
           </a>
         </p>
       </div>
-
-      <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
-      <!-- FirstAdTest -->
-      <ins
-        class="adsbygoogle"
-        style="display: block"
-        data-ad-client="ca-pub-8729859208925325"
-        data-ad-slot="6565956232"
-        data-ad-format="auto"
-        data-full-width-responsive="true"
-      ></ins>
-      <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>
 
       <div class="alert arb" dir="rtl">
         <h4 class="ttle arb" style="text-align: right">
@@ -130,8 +82,7 @@
         <p>
           دي
           <a
-            href="https://drive.google.com/file/d/1deGvvgKhuQaqTmoW0BrfuoL7LDih6vdz/view"
-          >
+            href="https://drive.google.com/file/d/1deGvvgKhuQaqTmoW0BrfuoL7LDih6vdz/view">
             أشكال المسائل</a
           >
           اللي ممكن تجيلنا في الامتحان <br />
@@ -178,8 +129,7 @@
           <i class="fas fa-play"></i>
           <a
             href="https://web.microsoftstream.com/channel/0de8ca51-f0ba-4cf7-97ce-1f1036014d0c"
-            target="_blank"
-          >
+            target="_blank">
             Microsoft Stream Channel
           </a>
         </p>
@@ -645,11 +595,23 @@
     <!--Footer-->
     <footer>
       Developed and maintained by
-      <a href="https://github.com/omarr45/" target="_blank">Omar AbdulRahman</a>
-      - 2021
+      <a href="https://omar45.com/" target="_blank">Omar AbdulRahman</a>
     </footer>
 
     <script src="scripts/accordion.js "></script>
     <script src="scripts/check.js"></script>
+
+    <!-- Buy me a coffee widget -->
+    <script
+      data-name="BMC-Widget"
+      data-cfasync="false"
+      src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
+      data-id="omar45"
+      data-description="Support me on Buy me a coffee!"
+      data-message="Thanks for visiting, you can support me here"
+      data-color="#FFDD00"
+      data-position="Right"
+      data-x_margin="18"
+      data-y_margin="18"></script>
   </body>
 </html>

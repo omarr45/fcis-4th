@@ -1,290 +1,387 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) [immediately after head tag]-->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-EKWFGLGKVR"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
 
-<head>
-    <meta charset="utf-8">
+      gtag('config', 'G-EKWFGLGKVR');
+    </script>
+    <!-- Google Ads [between head tags] -->
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8729859208925325"
+      crossorigin="anonymous"></script>
 
-    <script src="https://kit.fontawesome.com/e38234dfec.js" crossorigin="anonymous"></script>
+    <meta charset="utf-8" />
 
-    <script data-ad-client="ca-pub-8729859208925325" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script
+      src="https://kit.fontawesome.com/e38234dfec.js"
+      crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="styles/common.css">
-    <link rel="stylesheet" href="styles/commonCourse.css">
-    <link rel="icon" href="assets/favicon.png" sizes="any" type="image/png">
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/common.css" />
+    <link rel="stylesheet" href="styles/commonCourse.css" />
+    <link rel="icon" href="assets/favicon.png" sizes="any" type="image/png" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="og:title" property="og:title" content="FCIS 2023">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="og:title" property="og:title" content="Linear Algebra" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#0078E3" />
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LQ4C5TLEYJ"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'G-LQ4C5TLEYJ');
-    </script>
-
     <title>Linear Algebra</title>
-</head>
+  </head>
 
-<body>
-    <nav>
-        <div class="logo">
-            <a href="index.html" style="text-decoration: none; color: white;">
-              FCIS 2023
-            </a>
-        </div>
-        <input type="checkbox" id="click">
-        <label for="click" class="menu-btn">
-            <i class="fas fa-bars"></i>
-        </label>
-        <ul>
-            <li><a href="ds.html" title="Data Structures">Data Structures</a></li>
-            <li><a href="ai.html" title="Artificial Intelligence">Artificial Intelligence</a></li>
-            <li><a href="la.html" class="active" title="Linear Algebra">Linear Algebra</a></li>
-            <li><a href="ca.html" title="Computer Architecture">Computer Architecture</a></li>
-            <li><a href="or.html" title="Operations Research">Operations Research</a></li>
-        </ul>
-    </nav>
+  <body>
+    <header>
+      <a href="/">FCIS 2023 <sup>4th</sup></a>
+    </header>
 
     <div class="content">
-
-        <!-- <div class="alert">
-            <p>
-                ** Testing Ads **
-            </p>
-        </div> -->
-
-        <div class="hdrs">
-            <div class="course"> Linear Algebra </div>
-            <div class="prof">
-                <a href="mailto:mhaziz@cis.asu.edu.eg"> Dr. Mohamed Abdel-Aziz</a>
-            </div>
+      <div class="hdrs">
+        <div class="course">Linear Algebra</div>
+        <div class="prof">
+          <a href="mailto:mhaziz@cis.asu.edu.eg"> Dr. Mohamed Abdel-Aziz</a>
         </div>
+      </div>
 
-        <!-- <div class="alert arb" dir="rtl">
-            <h4 class="ttle"> Dr. Mohamed Abdel-Aziz &nbsp;-&nbsp;(23 April) </h4>
-            <p>
-                مافيش امتحان اليوم. فيه ملف واجب على التيمز تدربوا عليه وتحلوه. ده مش هيتسلم ده للتدريب فقط وفي امتحان بعد شم النسيم على الحاجات دي.
-            </p>
-            <p><b class="arb">
-                هتلاقي الفايل بتاع الواجب <a href="materials/Dr/LA_HW01.pdf" target="_blank">هنا</a>
-            </b></p>
-        </div> -->
+      <div class="progress" id="progress">Progress :</div>
+      <div class="progressContainer">
+        <div class="progressBack" id="back"></div>
+      </div>
 
-        <div class="progress" id="progress">Progress :</div>
-        <div class="progressContainer">
-            <div class="progressBack" id="back">
-            </div>
-        </div>
+      <div class="exam">
+        <p>
+          <a
+            href="https://drive.google.com/drive/folders/1F3Lc-f2wDNO_L5N9eJyh7-iMIhNTPJg6">
+            Previous Finals
+          </a>
+        </p>
+      </div>
 
-        <div class="exam">
-            <p>
-                <a href="https://drive.google.com/drive/folders/1F3Lc-f2wDNO_L5N9eJyh7-iMIhNTPJg6"> Previous Finals </a>
-            </p>
-        </div>
+      <button class="accordion fixed">Resources</button>
+      <div class="panel">
+        <p><i class="fas fa-user-friends"></i> Microsoft Teams Code: v2cojg1</p>
+        <p>
+          <i class="fas fa-play"></i>
+          <a
+            href="https://web.microsoftstream.com/channel/6f4208e6-07c8-4b55-90c7-8be6ebc2267a"
+            target="_blank">
+            Microsoft Stream Channel
+          </a>
+        </p>
+        <p>
+          <i class="fas fa-book"></i>
+          <a
+            href="materials/Books/Linear Algebra and Its Applications 4E (Lay).pdf"
+            target="_blank">
+            Course Book (8 Mb)</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-book"></i>
+          <a href="materials/Books/LinearAlgebraSolutions.pdf" target="_blank">
+            Course Book Solutions (8.4 Mb)</a
+          >
+        </p>
+      </div>
 
-        <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
-        <!-- FirstAdTest -->
-        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8729859208925325" data-ad-slot="6565956232" data-ad-format="auto" data-full-width-responsive="true"></ins>
-        <script>
-            (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
-
-        <button class="accordion fixed">Resources</button>
-        <div class="panel">
-            <p>
-                <i class="fas fa-user-friends"></i> Microsoft Teams Code: v2cojg1
-            </p>
-            <p>
-                <i class="fas fa-play"></i>
-                <a href="https://web.microsoftstream.com/channel/6f4208e6-07c8-4b55-90c7-8be6ebc2267a" target="_blank"> Microsoft Stream Channel </a>
-            </p>
-            <p>
-                <i class="fas fa-book"></i>
-                <a href="materials/Books/Linear Algebra and Its Applications 4E (Lay).pdf" target="_blank"> Course Book (8 Mb)</a>
-            </p>
-            <p>
-                <i class="fas fa-book"></i>
-                <a href="materials/Books/LinearAlgebraSolutions.pdf" target="_blank"> Course Book Solutions (8.4 Mb)</a>
-            </p>
-        </div>
-
-        <button class="accordion">Week 1</button>
-        <div class="panel">
-            <p>
-                No data yet from the doctor
-            </p>
-            <hr>
-            <p>
-                <i class="fas fa-handshake fa-lg"></i>
-                <a><b><u>Students' Materials</u></b></a>
-            </p>
-            <p>
-                <i class="fas fa-file-download"></i>
-                <a href="materials/St/Abdo_LA_L01.pdf" target="_blank" class="addCheck"> Lecture 1 - Abdo Hassan (1 MB) </a>
-                <!-- <label class="custom-check">
+      <button class="accordion">Week 1</button>
+      <div class="panel">
+        <p>No data yet from the doctor</p>
+        <hr />
+        <p>
+          <i class="fas fa-handshake fa-lg"></i>
+          <a
+            ><b><u>Students' Materials</u></b></a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file-download"></i>
+          <a
+            href="materials/St/Abdo_LA_L01.pdf"
+            target="_blank"
+            class="addCheck">
+            Lecture 1 - Abdo Hassan (1 MB)
+          </a>
+          <!-- <label class="custom-check">
                     <input type="checkbox">
                     <span class="checkmark"></span>
                 </label> -->
-            </p>
-            <p>
-                <i class="fas fa-file-download"></i>
-                <a href="materials/St/Alaa_LA_L01.pdf.pdf" target="_blank" class="addCheck"> Lecture 1 - Alaa Ahmed (2.63 MB) </a>
-            </p>
-        </div>
+        </p>
+        <p>
+          <i class="fas fa-file-download"></i>
+          <a
+            href="materials/St/Alaa_LA_L01.pdf.pdf"
+            target="_blank"
+            class="addCheck">
+            Lecture 1 - Alaa Ahmed (2.63 MB)
+          </a>
+        </p>
+      </div>
 
-        <button class="accordion">Week 2</button>
-        <div class="panel">
-            <p>
-                <i class="fas fa-file-download"></i>
-                <a href="materials/Dr/LA_L02.pdf" target="_blank" class="addCheck"> Lecture 2 (PDF) </a>
-            </p>
-            <hr>
-            <p>
-                <i class="fas fa-play-circle"></i>
-                <a href="https://cisasuedu.sharepoint.com/sites/Linearalgebra/Shared%20Documents/General/Section1%20Matrix%20video.mp4" target="_blank" class="addCheck"> Section 1 (Video) </a>
-            </p>
-            <p>
-                <i class="fas fa-file-download"></i>
-                <a href="materials/Dr/LA_S01.pdf" target="_blank" class="addCheck"> Section 1 (PDF) </a>
-            </p>
-            <hr>
-            <p>
-                <i class="fas fa-handshake fa-lg"></i>
-                <a><b><u>Students' Materials</u> &#8628; </b></a>
-            </p>
-            <p>
-                <i class="fas fa-file-download"></i>
-                <a href="materials/St/Nora_LA_S01.pdf" target="_blank" class="addCheck"> Section 1 - Nora Ekramy (226 KB) </a>
-            </p>
-        </div>
+      <button class="accordion">Week 2</button>
+      <div class="panel">
+        <p>
+          <i class="fas fa-file-download"></i>
+          <a href="materials/Dr/LA_L02.pdf" target="_blank" class="addCheck">
+            Lecture 2 (PDF)
+          </a>
+        </p>
+        <hr />
+        <p>
+          <i class="fas fa-play-circle"></i>
+          <a
+            href="https://cisasuedu.sharepoint.com/sites/Linearalgebra/Shared%20Documents/General/Section1%20Matrix%20video.mp4"
+            target="_blank"
+            class="addCheck">
+            Section 1 (Video)
+          </a>
+        </p>
+        <p>
+          <i class="fas fa-file-download"></i>
+          <a href="materials/Dr/LA_S01.pdf" target="_blank" class="addCheck">
+            Section 1 (PDF)
+          </a>
+        </p>
+        <hr />
+        <p>
+          <i class="fas fa-handshake fa-lg"></i>
+          <a
+            ><b><u>Students' Materials</u> &#8628; </b></a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file-download"></i>
+          <a
+            href="materials/St/Nora_LA_S01.pdf"
+            target="_blank"
+            class="addCheck">
+            Section 1 - Nora Ekramy (226 KB)
+          </a>
+        </p>
+      </div>
 
-        <button class="accordion">Week 3</button>
-        <div class="panel">
-            <p>
-                <i class="fas fa-play-circle"></i>
-                <a href="https://cisasuedu.sharepoint.com/sites/Linearalgebra/Shared%20Documents/General/Section%202%20sys%20of%20L.eq.mp4" target="_blank" class="addCheck"> Section 2 (Video) </a>
-            </p>
-            <p>
-                <i class="fas fa-file-download"></i>
-                <a href="materials/Dr/LA_S02.pdf" target="_blank" class="addCheck"> Section 2 (PDF) </a>
-            </p>
-        </div>
+      <button class="accordion">Week 3</button>
+      <div class="panel">
+        <p>
+          <i class="fas fa-play-circle"></i>
+          <a
+            href="https://cisasuedu.sharepoint.com/sites/Linearalgebra/Shared%20Documents/General/Section%202%20sys%20of%20L.eq.mp4"
+            target="_blank"
+            class="addCheck">
+            Section 2 (Video)
+          </a>
+        </p>
+        <p>
+          <i class="fas fa-file-download"></i>
+          <a href="materials/Dr/LA_S02.pdf" target="_blank" class="addCheck">
+            Section 2 (PDF)
+          </a>
+        </p>
+      </div>
 
-        <button class="accordion">Week 4</button>
-        <div class="panel">
-            <p>
-                <i class="fas fa-bahai"></i>
-                <b class="arb"> متتخضش، كل بارت من 10 ل 15 دقيقة </b>
-            </p>
-            <p>
-                <i class="fas fa-play-circle"></i>
-                <a href="https://cisasuedu.sharepoint.com/sites/Linearalgebra/Shared%20Documents/General/section%203%20(1).webm" target="_blank" class="addCheck"> Section 3 Part 1 (Video) </a>
-            </p>
-            <p>
-                <i class="fas fa-play-circle"></i>
-                <a href="https://cisasuedu.sharepoint.com/sites/Linearalgebra/Shared%20Documents/General/section%203%20(2).webm" target="_blank" class="addCheck"> Section 3 Part 2 (Video) </a>
-            </p>
-            <p>
-                <i class="fas fa-play-circle"></i>
-                <a href="https://cisasuedu.sharepoint.com/sites/Linearalgebra/Shared%20Documents/General/section%203%20(3).webm" target="_blank" class="addCheck"> Section 3 Part 3 (Video) </a>
-            </p>
-            <p>
-                <i class="fas fa-play-circle"></i>
-                <a href="https://cisasuedu.sharepoint.com/sites/Linearalgebra/Shared%20Documents/General/section%203%20(4).webm" target="_blank" class="addCheck"> Section 3 Part 4 (Video) </a>
-            </p>
-            <p>
-                <i class="fas fa-play-circle"></i>
-                <a href="https://drive.google.com/file/d/1Aycpc6Uw5SG9eeum2qo22LxuzMShPyiy/" target="_blank" class="addCheck"> Section 3 Part 5 (Video) </a>
-            </p>
-            <p>
-                <i class="fas fa-play-circle"></i>
-                <a href="https://cisasuedu.sharepoint.com/sites/Linearalgebra/Shared%20Documents/General/section%203%20(6).webm" target="_blank" class="addCheck"> Section 3 Part 6 (Video) </a>
-            </p>
-            <p>
-                <i class="fas fa-play-circle"></i>
-                <a href="https://cisasuedu.sharepoint.com/sites/Linearalgebra/Shared%20Documents/General/section%203%20(7).webm" target="_blank" class="addCheck"> Section 3 Part 7 (Video) </a>
-            </p>
-            <p>
-                <i class="fas fa-file-download"></i>
-                <a href="materials/Dr/LA_S03.pdf" target="_blank" class="addCheck"> Section 3 (PDF) </a>
-            </p>
-        </div>
+      <button class="accordion">Week 4</button>
+      <div class="panel">
+        <p>
+          <i class="fas fa-bahai"></i>
+          <b class="arb"> متتخضش، كل بارت من 10 ل 15 دقيقة </b>
+        </p>
+        <p>
+          <i class="fas fa-play-circle"></i>
+          <a
+            href="https://cisasuedu.sharepoint.com/sites/Linearalgebra/Shared%20Documents/General/section%203%20(1).webm"
+            target="_blank"
+            class="addCheck">
+            Section 3 Part 1 (Video)
+          </a>
+        </p>
+        <p>
+          <i class="fas fa-play-circle"></i>
+          <a
+            href="https://cisasuedu.sharepoint.com/sites/Linearalgebra/Shared%20Documents/General/section%203%20(2).webm"
+            target="_blank"
+            class="addCheck">
+            Section 3 Part 2 (Video)
+          </a>
+        </p>
+        <p>
+          <i class="fas fa-play-circle"></i>
+          <a
+            href="https://cisasuedu.sharepoint.com/sites/Linearalgebra/Shared%20Documents/General/section%203%20(3).webm"
+            target="_blank"
+            class="addCheck">
+            Section 3 Part 3 (Video)
+          </a>
+        </p>
+        <p>
+          <i class="fas fa-play-circle"></i>
+          <a
+            href="https://cisasuedu.sharepoint.com/sites/Linearalgebra/Shared%20Documents/General/section%203%20(4).webm"
+            target="_blank"
+            class="addCheck">
+            Section 3 Part 4 (Video)
+          </a>
+        </p>
+        <p>
+          <i class="fas fa-play-circle"></i>
+          <a
+            href="https://drive.google.com/file/d/1Aycpc6Uw5SG9eeum2qo22LxuzMShPyiy/"
+            target="_blank"
+            class="addCheck">
+            Section 3 Part 5 (Video)
+          </a>
+        </p>
+        <p>
+          <i class="fas fa-play-circle"></i>
+          <a
+            href="https://cisasuedu.sharepoint.com/sites/Linearalgebra/Shared%20Documents/General/section%203%20(6).webm"
+            target="_blank"
+            class="addCheck">
+            Section 3 Part 6 (Video)
+          </a>
+        </p>
+        <p>
+          <i class="fas fa-play-circle"></i>
+          <a
+            href="https://cisasuedu.sharepoint.com/sites/Linearalgebra/Shared%20Documents/General/section%203%20(7).webm"
+            target="_blank"
+            class="addCheck">
+            Section 3 Part 7 (Video)
+          </a>
+        </p>
+        <p>
+          <i class="fas fa-file-download"></i>
+          <a href="materials/Dr/LA_S03.pdf" target="_blank" class="addCheck">
+            Section 3 (PDF)
+          </a>
+        </p>
+      </div>
 
-        <button class="accordion">Week 5</button>
-        <div class="panel">
-            <p>
-                <i class="fas fa-bahai"></i>
-                <b class="arb"> متتخضش، كل بارت من 10 ل 15 دقيقة </b>
-            </p>
-            <p>
-                <i class="fas fa-play-circle"></i>
-                <a href="https://cisasuedu.sharepoint.com/sites/Linearalgebra/Shared%20Documents/General/Section%204%20Determinants%20(1).webm" target="_blank" class="addCheck"> Section 4 Part 1 (Video) </a>
-            </p>
-            <p>
-                <i class="fas fa-play-circle"></i>
-                <a href="https://cisasuedu.sharepoint.com/sites/Linearalgebra/Shared%20Documents/General/Section%204%20Determinants%20(2).webm" target="_blank" class="addCheck"> Section 4 Part 2 (Video) </a>
-            </p>
-            <p>
-                <i class="fas fa-play-circle"></i>
-                <a href="https://cisasuedu.sharepoint.com/sites/Linearalgebra/Shared%20Documents/General/Section%204%20Determinants%20(3).webm" target="_blank" class="addCheck"> Section 4 Part 3 (Video) </a>
-            </p>
-            <p>
-                <i class="fas fa-play-circle"></i>
-                <a href="https://cisasuedu.sharepoint.com/sites/Linearalgebra/Shared%20Documents/General/section%204%20inverse.webm" target="_blank" class="addCheck"> Section 4 Part 4 (Video) </a>
-            </p>
-            <p>
-                <i class="fas fa-file-download"></i>
-                <a href="materials/Dr/LA_S04.pdf" target="_blank" class="addCheck"> Section 4 (PDF) </a>
-            </p>
-        </div>
+      <button class="accordion">Week 5</button>
+      <div class="panel">
+        <p>
+          <i class="fas fa-bahai"></i>
+          <b class="arb"> متتخضش، كل بارت من 10 ل 15 دقيقة </b>
+        </p>
+        <p>
+          <i class="fas fa-play-circle"></i>
+          <a
+            href="https://cisasuedu.sharepoint.com/sites/Linearalgebra/Shared%20Documents/General/Section%204%20Determinants%20(1).webm"
+            target="_blank"
+            class="addCheck">
+            Section 4 Part 1 (Video)
+          </a>
+        </p>
+        <p>
+          <i class="fas fa-play-circle"></i>
+          <a
+            href="https://cisasuedu.sharepoint.com/sites/Linearalgebra/Shared%20Documents/General/Section%204%20Determinants%20(2).webm"
+            target="_blank"
+            class="addCheck">
+            Section 4 Part 2 (Video)
+          </a>
+        </p>
+        <p>
+          <i class="fas fa-play-circle"></i>
+          <a
+            href="https://cisasuedu.sharepoint.com/sites/Linearalgebra/Shared%20Documents/General/Section%204%20Determinants%20(3).webm"
+            target="_blank"
+            class="addCheck">
+            Section 4 Part 3 (Video)
+          </a>
+        </p>
+        <p>
+          <i class="fas fa-play-circle"></i>
+          <a
+            href="https://cisasuedu.sharepoint.com/sites/Linearalgebra/Shared%20Documents/General/section%204%20inverse.webm"
+            target="_blank"
+            class="addCheck">
+            Section 4 Part 4 (Video)
+          </a>
+        </p>
+        <p>
+          <i class="fas fa-file-download"></i>
+          <a href="materials/Dr/LA_S04.pdf" target="_blank" class="addCheck">
+            Section 4 (PDF)
+          </a>
+        </p>
+      </div>
 
-        <button class="accordion">Week 6</button>
-        <div class="panel">
-            <p>
-                <i class="fas fa-play-circle"></i>
-                <a href="https://cisasuedu.sharepoint.com/sites/Linearalgebra/Shared%20Documents/General/Section%205%20Vector%20space.mp4" target="_blank" class="addCheck"> Section 5 (Video) </a>
-            </p>
-            <p>
-                <i class="fas fa-file-download"></i>
-                <a href="materials/Dr/LA_S05.pdf" target="_blank" class="addCheck"> Section 5 (PDF) </a>
-            </p>
-        </div>
+      <button class="accordion">Week 6</button>
+      <div class="panel">
+        <p>
+          <i class="fas fa-play-circle"></i>
+          <a
+            href="https://cisasuedu.sharepoint.com/sites/Linearalgebra/Shared%20Documents/General/Section%205%20Vector%20space.mp4"
+            target="_blank"
+            class="addCheck">
+            Section 5 (Video)
+          </a>
+        </p>
+        <p>
+          <i class="fas fa-file-download"></i>
+          <a href="materials/Dr/LA_S05.pdf" target="_blank" class="addCheck">
+            Section 5 (PDF)
+          </a>
+        </p>
+      </div>
 
-        <button class="accordion">Week 7</button>
-        <div class="panel">
-            <p>
-                <i class="fas fa-play-circle"></i>
-                <a href="https://cisasuedu.sharepoint.com/sites/Linearalgebra/Shared%20Documents/General/Section%206%20(1).mp4" target="_blank" class="addCheck"> Section 6 - Part 1 (Video) </a>
-            </p>
-            <p>
-                <i class="fas fa-play-circle"></i>
-                <a href="https://cisasuedu.sharepoint.com/sites/Linearalgebra/Shared%20Documents/General/Section%206%20(2).mp4" target="_blank" class="addCheck"> Section 6 - Part 2 (Video) </a>
-            </p>
-            <p>
-                <i class="fas fa-file-download"></i>
-                <a href="materials/Dr/LA_S06.pdf" target="_blank" class="addCheck"> Section 6 (PDF) </a>
-            </p>
-        </div>
-
+      <button class="accordion">Week 7</button>
+      <div class="panel">
+        <p>
+          <i class="fas fa-play-circle"></i>
+          <a
+            href="https://cisasuedu.sharepoint.com/sites/Linearalgebra/Shared%20Documents/General/Section%206%20(1).mp4"
+            target="_blank"
+            class="addCheck">
+            Section 6 - Part 1 (Video)
+          </a>
+        </p>
+        <p>
+          <i class="fas fa-play-circle"></i>
+          <a
+            href="https://cisasuedu.sharepoint.com/sites/Linearalgebra/Shared%20Documents/General/Section%206%20(2).mp4"
+            target="_blank"
+            class="addCheck">
+            Section 6 - Part 2 (Video)
+          </a>
+        </p>
+        <p>
+          <i class="fas fa-file-download"></i>
+          <a href="materials/Dr/LA_S06.pdf" target="_blank" class="addCheck">
+            Section 6 (PDF)
+          </a>
+        </p>
+      </div>
     </div>
 
     <!--Footer-->
     <footer>
-        Developed and maintained by
-        <a href="https://github.com/omarr45/" target="_blank">Omar AbdulRahman</a> - 2021
+      Developed and maintained by
+      <a href="https://omar45.com/" target="_blank">Omar AbdulRahman</a>
     </footer>
 
     <script src="scripts/accordion.js"></script>
     <script src="scripts/check.js"></script>
-
-</body>
-
+    <!-- Buy me a coffee widget -->
+    <script
+      data-name="BMC-Widget"
+      data-cfasync="false"
+      src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
+      data-id="omar45"
+      data-description="Support me on Buy me a coffee!"
+      data-message="Thanks for visiting, you can support me here"
+      data-color="#FFDD00"
+      data-position="Right"
+      data-x_margin="18"
+      data-y_margin="18"></script>
+  </body>
 </html>

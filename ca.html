@@ -1,333 +1,477 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) [immediately after head tag]-->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-EKWFGLGKVR"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
 
-<head>
-    <meta charset="utf-8">
+      gtag('config', 'G-EKWFGLGKVR');
+    </script>
+    <!-- Google Ads [between head tags] -->
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8729859208925325"
+      crossorigin="anonymous"></script>
 
-    <script src="https://kit.fontawesome.com/e38234dfec.js" crossorigin="anonymous"></script>
-    <script data-ad-client="ca-pub-8729859208925325" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <meta charset="utf-8" />
 
-    <link rel="stylesheet" href="styles/common.css">
-    <link rel="stylesheet" href="styles/commonCourse.css">
-    <link rel="icon" href="assets/favicon.png" sizes="any" type="image/png">
+    <script
+      src="https://kit.fontawesome.com/e38234dfec.js"
+      crossorigin="anonymous"></script>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="og:title" property="og:title" content="FCIS 2023">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/common.css" />
+    <link rel="stylesheet" href="styles/commonCourse.css" />
+    <link rel="icon" href="assets/favicon.png" sizes="any" type="image/png" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="og:title" property="og:title" content="Computer Architecture" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#0078E3" />
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LQ4C5TLEYJ"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'G-LQ4C5TLEYJ');
-    </script>
-
     <title>Computer Architecture</title>
-</head>
+  </head>
 
-<body>
-    <nav>
-        <div class="logo">
-            <a href="index.html" style="text-decoration: none; color: white;">
-              FCIS 2023
-            </a>
-        </div>
-        <input type="checkbox" id="click">
-        <label for="click" class="menu-btn">
-        <i class="fas fa-bars"></i>
-      </label>
-        <ul>
-            <li><a href="ds.html" title="Data Structures">Data Structures</a></li>
-            <li><a href="ai.html" title="Artificial Intelligence">Artificial Intelligence</a></li>
-            <li><a href="la.html" title="Linear Algebra">Linear Algebra</a></li>
-            <li><a href="ca.html" class="active" title="Computer Architecture">Computer Architecture</a></li>
-            <li><a href="or.html" title="Operations Research">Operations Research</a></li>
-        </ul>
-    </nav>
+  <body>
+    <header>
+      <a href="/">FCIS 2023 <sup>4th</sup></a>
+    </header>
 
     <div class="content">
-
-        <!-- <div class="alert">
-            <p>
-                ** Testing Ads **
-            </p>
-        </div> -->
-
-        <div class="hdrs">
-            <div class="course"> Computer Architecture </div>
-            <div class="prof">
-                <a href="mailto:randa_aboelfatoh@cis.asu.edu.eg"> Dr. Randa Mohammed</a>
-            </div>
+      <div class="hdrs">
+        <div class="course">Computer Architecture</div>
+        <div class="prof">
+          <a href="mailto:randa_aboelfatoh@cis.asu.edu.eg">
+            Dr. Randa Mohammed</a
+          >
         </div>
+      </div>
 
-        <div class="progress" id="progress">Progress :</div>
-        <div class="progressContainer">
-            <div class="progressBack" id="back">
-            </div>
-        </div>
+      <div class="progress" id="progress">Progress :</div>
+      <div class="progressContainer">
+        <div class="progressBack" id="back"></div>
+      </div>
 
-        <div class="exam">
-            <p>
-                <a href="https://drive.google.com/drive/folders/18VjGUHrJ9X8jJ-7oM4z0AAF0lolrW0Qu"> Previous Finals & Midterms </a>
-            </p>
-        </div>
+      <div class="exam">
+        <p>
+          <a
+            href="https://drive.google.com/drive/folders/18VjGUHrJ9X8jJ-7oM4z0AAF0lolrW0Qu">
+            Previous Finals & Midterms
+          </a>
+        </p>
+      </div>
 
-        <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
-        <!-- FirstAdTest -->
-        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8729859208925325" data-ad-slot="6565956232" data-ad-format="auto" data-full-width-responsive="true"></ins>
-        <script>
-            (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
+      <button class="accordion fixed">Resources</button>
+      <div class="panel">
+        <p><i class="fas fa-user-friends"></i> Microsoft Teams Code: 5cohq31</p>
+        <p>
+          <i class="fas fa-play"></i>
+          <a
+            href="https://web.microsoftstream.com/channel/995ccc8f-a68e-43ab-9303-ae9ad1abf11a"
+            target="_blank">
+            Microsoft Stream Channel
+          </a>
+        </p>
+        <p>
+          <i class="fas fa-star"></i>
+          <a
+            href="https://drive.google.com/drive/folders/1QUzwLlfM-GJ-ACQEpM5eUDzULhW9q5FU"
+            target="_blank">
+            Old Data
+          </a>
+        </p>
+        <p>
+          <i class="fas fa-file-download"></i>
+          <a
+            href="https://drive.google.com/drive/folders/1tzhFdQfVUJRfLywUvlCRtB5Nvngenh8z"
+            target="_blank">
+            Software used in Labs (6 GB)
+          </a>
+        </p>
+        <p>
+          <i class="fas fa-exclamation-triangle"></i>
+          <a href="materials/Dr/Extras/Xilinx_ISE.pptx" target="_blank">
+            Xilinx ISE Simulator installation and troubleshooting
+          </a>
+        </p>
+        <p>
+          <i class="fas fa-book"></i>
+          <a
+            href="materials/Books/CS422-Computer-Architecture-ComputerOrganizationAndDesign5thEdition2014.pdf"
+            target="_blank">
+            Course Book (29 Mb)</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file-alt"></i>
+          <a href="materials/Books/Sol1.pdf" target="_blank">
+            Solutions - Chapter 1 (1.89 Mb)</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file-alt"></i>
+          <a href="materials/Books/Sol2.pdf" target="_blank">
+            Solutions - Chapter 2 (1.58 Mb)</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file-alt"></i>
+          <a href="materials/Books/Sol4.pdf" target="_blank">
+            Solutions - Chapter 4 (1.99 Mb)</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file-alt"></i>
+          <a href="materials/Books/Sol5.pdf" target="_blank">
+            Solutions - Chapter 5 (2.01 Mb)</a
+          >
+        </p>
+      </div>
 
-        <button class="accordion fixed">Resources</button>
-        <div class="panel">
-            <p>
-                <i class="fas fa-user-friends"></i> Microsoft Teams Code: 5cohq31
-            </p>
-            <p>
-                <i class="fas fa-play"></i>
-                <a href="https://web.microsoftstream.com/channel/995ccc8f-a68e-43ab-9303-ae9ad1abf11a" target="_blank"> Microsoft Stream Channel </a>
-            </p>
-            <p>
-                <i class="fas fa-star"></i>
-                <a href="https://drive.google.com/drive/folders/1QUzwLlfM-GJ-ACQEpM5eUDzULhW9q5FU" target="_blank"> Old Data </a>
-            </p>
-            <p>
-                <i class="fas fa-file-download"></i>
-                <a href="https://drive.google.com/drive/folders/1tzhFdQfVUJRfLywUvlCRtB5Nvngenh8z" target="_blank"> Software used in Labs (6 GB) </a>
-            </p>
-            <p>
-                <i class="fas fa-exclamation-triangle"></i>
-                <a href="materials/Dr/Extras/Xilinx_ISE.pptx" target="_blank"> Xilinx ISE Simulator installation and troubleshooting </a>
-            </p>
-            <p>
-                <i class="fas fa-book"></i>
-                <a href="materials/Books/CS422-Computer-Architecture-ComputerOrganizationAndDesign5thEdition2014.pdf" target="_blank"> Course Book (29 Mb)</a>
-            </p>
-            <p>
-                <i class="fas fa-file-alt"></i>
-                <a href="materials/Books/Sol1.pdf" target="_blank"> Solutions - Chapter 1 (1.89 Mb)</a>
-            </p>
-            <p>
-                <i class="fas fa-file-alt"></i>
-                <a href="materials/Books/Sol2.pdf" target="_blank"> Solutions - Chapter 2 (1.58 Mb)</a>
-            </p>
-            <p>
-                <i class="fas fa-file-alt"></i>
-                <a href="materials/Books/Sol4.pdf" target="_blank"> Solutions - Chapter 4 (1.99 Mb)</a>
-            </p>
-            <p>
-                <i class="fas fa-file-alt"></i>
-                <a href="materials/Books/Sol5.pdf" target="_blank"> Solutions - Chapter 5 (2.01 Mb)</a>
-            </p>
-        </div>
+      <button class="accordion">Week 1</button>
+      <div class="panel">
+        <p>
+          <i class="fas fa-play-circle"></i>
+          <a
+            href="https://web.microsoftstream.com/video/0b54788c-d6bf-449a-bd93-eb4e603cc323"
+            target="_blank"
+            class="addCheck"
+            >Lecture 1 (Video)</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file-download"></i>
+          <a href="materials/Dr/CA_L01.pdf" target="_blank" class="addCheck"
+            >Lecture 1 (PDF)</a
+          >
+        </p>
+      </div>
 
-        <button class="accordion">Week 1</button>
-        <div class="panel">
-            <p>
-                <i class="fas fa-play-circle"></i>
-                <a href="https://web.microsoftstream.com/video/0b54788c-d6bf-449a-bd93-eb4e603cc323" target="_blank" class="addCheck">Lecture 1 (Video)</a>
-            </p>
-            <p>
-                <i class="fas fa-file-download"></i>
-                <a href="materials/Dr/CA_L01.pdf" target="_blank" class="addCheck">Lecture 1 (PDF)</a>
-            </p>
-        </div>
+      <button class="accordion">Week 2</button>
+      <div class="panel">
+        <p>
+          <i class="fas fa-play-circle"></i>
+          <a
+            href="https://web.microsoftstream.com/video/8198025e-549f-45c5-9858-60da2c5ba3b7"
+            target="_blank"
+            class="addCheck"
+            >Lecture 2 (Video)</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file-download"></i>
+          <a href="materials/Dr/CA_L02.pdf" target="_blank" class="addCheck"
+            >Lecture 2 (PDF)</a
+          >
+        </p>
+        <hr />
+        <p>
+          <i class="fas fa-play-circle"></i>
+          <a
+            href="https://web.microsoftstream.com/video/09f4bedc-b278-49c0-8e55-102efef1bfa6"
+            target="_blank"
+            class="addCheck"
+            >Lab 1 (Video)</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file-download"></i>
+          <a href="materials/Dr/CA_S01.pdf" target="_blank" class="addCheck"
+            >Lab 1 (PDF)</a
+          >
+        </p>
+      </div>
 
-        <button class="accordion">Week 2</button>
-        <div class="panel">
-            <p>
-                <i class="fas fa-play-circle"></i>
-                <a href="https://web.microsoftstream.com/video/8198025e-549f-45c5-9858-60da2c5ba3b7" target="_blank" class="addCheck">Lecture 2 (Video)</a>
-            </p>
-            <p>
-                <i class="fas fa-file-download"></i>
-                <a href="materials/Dr/CA_L02.pdf" target="_blank" class="addCheck">Lecture 2 (PDF)</a>
-            </p>
-            <hr>
-            <p>
-                <i class="fas fa-play-circle"></i>
-                <a href="https://web.microsoftstream.com/video/09f4bedc-b278-49c0-8e55-102efef1bfa6" target="_blank" class="addCheck">Lab 1 (Video)</a>
-            </p>
-            <p>
-                <i class="fas fa-file-download"></i>
-                <a href="materials/Dr/CA_S01.pdf" target="_blank" class="addCheck">Lab 1 (PDF)</a>
-            </p>
-        </div>
+      <button class="accordion">Week 3</button>
+      <div class="panel">
+        <p>
+          <i class="fas fa-play-circle"></i>
+          <a
+            href="https://web.microsoftstream.com/video/22cd26f8-3dc3-4a45-abf4-146861058c2b"
+            target="_blank"
+            class="addCheck"
+            >Lecture 3 (Video)</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file-download"></i>
+          <a href="materials/Dr/CA_L03.pdf" target="_blank" class="addCheck"
+            >Lecture 3 (PDF)</a
+          >
+        </p>
+        <hr />
+        <p>
+          <i class="fas fa-play-circle"></i>
+          <a
+            href="https://web.microsoftstream.com/video/f4b3eca0-538e-4ebf-9cdf-ff1dc8facb78"
+            target="_blank"
+            class="addCheck"
+            >Lab 2 (Video)</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file-download"></i>
+          <a href="materials/Dr/CA_S02.pdf" target="_blank" class="addCheck"
+            >Lab 2 (PDF)</a
+          >
+        </p>
+      </div>
 
-        <button class="accordion">Week 3</button>
-        <div class="panel">
-            <p>
-                <i class="fas fa-play-circle"></i>
-                <a href="https://web.microsoftstream.com/video/22cd26f8-3dc3-4a45-abf4-146861058c2b" target="_blank" class="addCheck">Lecture 3 (Video)</a>
-            </p>
-            <p>
-                <i class="fas fa-file-download"></i>
-                <a href="materials/Dr/CA_L03.pdf" target="_blank" class="addCheck">Lecture 3 (PDF)</a>
-            </p>
-            <hr>
-            <p>
-                <i class="fas fa-play-circle"></i>
-                <a href="https://web.microsoftstream.com/video/f4b3eca0-538e-4ebf-9cdf-ff1dc8facb78" target="_blank" class="addCheck">Lab 2 (Video)</a>
-            </p>
-            <p>
-                <i class="fas fa-file-download"></i>
-                <a href="materials/Dr/CA_S02.pdf" target="_blank" class="addCheck">Lab 2 (PDF)</a>
-            </p>
-        </div>
+      <button class="accordion">Week 4</button>
+      <div class="panel">
+        <p>
+          <i class="fas fa-play-circle"></i>
+          <a
+            href="https://web.microsoftstream.com/video/9f9d73a6-48fd-4888-90c3-b04db8dca658"
+            target="_blank"
+            class="addCheck"
+            >Lecture 4 (Video)</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file-download"></i>
+          <a href="materials/Dr/CA_L04.pdf" target="_blank" class="addCheck"
+            >Lecture 4 (PDF)</a
+          >
+        </p>
+        <hr />
+        <p>
+          <i class="fas fa-play-circle"></i>
+          <a
+            href="https://web.microsoftstream.com/video/4ffa6f0d-23a6-41e1-abd3-b576d7ed3d5f"
+            target="_blank"
+            class="addCheck"
+            >Lab 3 (Video)</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file-download"></i>
+          <a href="materials/Dr/CA_S03.pdf" target="_blank" class="addCheck"
+            >Lab 3 (PDF)</a
+          >
+        </p>
+      </div>
 
-        <button class="accordion">Week 4</button>
-        <div class="panel">
-            <p>
-                <i class="fas fa-play-circle"></i>
-                <a href="https://web.microsoftstream.com/video/9f9d73a6-48fd-4888-90c3-b04db8dca658" target="_blank" class="addCheck">Lecture 4 (Video)</a>
-            </p>
-            <p>
-                <i class="fas fa-file-download"></i>
-                <a href="materials/Dr/CA_L04.pdf" target="_blank" class="addCheck">Lecture 4 (PDF)</a>
-            </p>
-            <hr>
-            <p>
-                <i class="fas fa-play-circle"></i>
-                <a href="https://web.microsoftstream.com/video/4ffa6f0d-23a6-41e1-abd3-b576d7ed3d5f" target="_blank" class="addCheck">Lab 3 (Video)</a>
-            </p>
-            <p>
-                <i class="fas fa-file-download"></i>
-                <a href="materials/Dr/CA_S03.pdf" target="_blank" class="addCheck">Lab 3 (PDF)</a>
-            </p>
-        </div>
+      <button class="accordion">Week 5</button>
+      <div class="panel">
+        <p>
+          <i class="fas fa-play-circle"></i>
+          <a
+            href="https://web.microsoftstream.com/video/d84d7f31-78a2-403b-ab94-e2716e9c1dd9"
+            target="_blank"
+            class="addCheck"
+            >Lecture 5 (Video)</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file-download"></i>
+          <a href="materials/Dr/CA_L05.pdf" target="_blank" class="addCheck"
+            >Lecture 5 (PDF)</a
+          >
+        </p>
+        <hr />
+        <p>
+          <i class="fas fa-play-circle"></i>
+          <a
+            href="https://web.microsoftstream.com/video/6d1f330e-192d-446c-bc50-d5f12305ac41"
+            target="_blank"
+            class="addCheck"
+            >Lab 4 - Part 1 (Video)</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-play-circle"></i>
+          <a
+            href="https://web.microsoftstream.com/video/4781e446-2b84-495d-b4c4-8a76b32b7e8c"
+            target="_blank"
+            class="addCheck"
+            >Lab 4 - Part 2 (Video)</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file-download"></i>
+          <a href="materials/Dr/CA_S04.pdf" target="_blank" class="addCheck"
+            >Lab 4 (PDF)</a
+          >
+        </p>
+      </div>
 
-        <button class="accordion">Week 5</button>
-        <div class="panel">
-            <p>
-                <i class="fas fa-play-circle"></i>
-                <a href="https://web.microsoftstream.com/video/d84d7f31-78a2-403b-ab94-e2716e9c1dd9" target="_blank" class="addCheck">Lecture 5 (Video)</a>
-            </p>
-            <p>
-                <i class="fas fa-file-download"></i>
-                <a href="materials/Dr/CA_L05.pdf" target="_blank" class="addCheck">Lecture 5 (PDF)</a>
-            </p>
-            <hr>
-            <p>
-                <i class="fas fa-play-circle"></i>
-                <a href="https://web.microsoftstream.com/video/6d1f330e-192d-446c-bc50-d5f12305ac41" target="_blank" class="addCheck">Lab 4 - Part 1 (Video)</a>
-            </p>
-            <p>
-                <i class="fas fa-play-circle"></i>
-                <a href="https://web.microsoftstream.com/video/4781e446-2b84-495d-b4c4-8a76b32b7e8c" target="_blank" class="addCheck">Lab 4 - Part 2 (Video)</a>
-            </p>
-            <p>
-                <i class="fas fa-file-download"></i>
-                <a href="materials/Dr/CA_S04.pdf" target="_blank" class="addCheck">Lab 4 (PDF)</a>
-            </p>
-        </div>
+      <button class="accordion">Week 6</button>
+      <div class="panel">
+        <p>
+          <i class="fas fa-play-circle"></i>
+          <a
+            href="https://web.microsoftstream.com/video/05aab185-0f66-43bd-acdc-22ed89a41421"
+            target="_blank"
+            class="addCheck"
+            >Lecture 6 (Video)</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file-download"></i>
+          <a href="materials/Dr/CA_L06.pdf" target="_blank" class="addCheck"
+            >Lecture 6 (PDF)</a
+          >
+        </p>
+        <hr />
+        <p>
+          <i class="fas fa-play-circle"></i>
+          <a
+            href="https://web.microsoftstream.com/video/f2fb3583-4022-4269-9ea2-a6eb6c8f0e3d"
+            target="_blank"
+            class="addCheck"
+            >Lab 5 (Video)</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file-download"></i>
+          <a href="materials/Dr/CA_S05.pdf" target="_blank" class="addCheck"
+            >Lab 5 (PDF)</a
+          >
+        </p>
+      </div>
 
-        <button class="accordion">Week 6</button>
-        <div class="panel">
-            <p>
-                <i class="fas fa-play-circle"></i>
-                <a href="https://web.microsoftstream.com/video/05aab185-0f66-43bd-acdc-22ed89a41421" target="_blank" class="addCheck">Lecture 6 (Video)</a>
-            </p>
-            <p>
-                <i class="fas fa-file-download"></i>
-                <a href="materials/Dr/CA_L06.pdf" target="_blank" class="addCheck">Lecture 6 (PDF)</a>
-            </p>
-            <hr>
-            <p>
-                <i class="fas fa-play-circle"></i>
-                <a href="https://web.microsoftstream.com/video/f2fb3583-4022-4269-9ea2-a6eb6c8f0e3d" target="_blank" class="addCheck">Lab 5 (Video)</a>
-            </p>
-            <p>
-                <i class="fas fa-file-download"></i>
-                <a href="materials/Dr/CA_S05.pdf" target="_blank" class="addCheck">Lab 5 (PDF)</a>
-            </p>
-        </div>
+      <button class="accordion">Week 7</button>
+      <div class="panel">
+        <p>
+          <i class="fas fa-play-circle"></i>
+          <a
+            href="https://web.microsoftstream.com/video/a09396ba-d5ef-4c37-9606-9ecaaaa96f2b"
+            target="_blank"
+            class="addCheck"
+            >Lecture 7 (Video)</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file-download"></i>
+          <a href="materials/Dr/CA_L07.pdf" target="_blank" class="addCheck"
+            >Lecture 7 (PDF)</a
+          >
+        </p>
+        <hr />
+        <p>
+          <i class="fas fa-play-circle"></i>
+          <a
+            href="https://web.microsoftstream.com/video/e0babae2-8b3b-488c-928a-256a28c94df3"
+            target="_blank"
+            class="addCheck"
+            >Lab 6 (Video)</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file-download"></i>
+          <a href="materials/Dr/CA_S06.pdf" target="_blank" class="addCheck"
+            >Lab 6 (PDF)</a
+          >
+        </p>
+      </div>
 
-        <button class="accordion">Week 7</button>
-        <div class="panel">
-            <p>
-                <i class="fas fa-play-circle"></i>
-                <a href="https://web.microsoftstream.com/video/a09396ba-d5ef-4c37-9606-9ecaaaa96f2b" target="_blank" class="addCheck">Lecture 7 (Video)</a>
-            </p>
-            <p>
-                <i class="fas fa-file-download"></i>
-                <a href="materials/Dr/CA_L07.pdf" target="_blank" class="addCheck">Lecture 7 (PDF)</a>
-            </p>
-            <hr>
-            <p>
-                <i class="fas fa-play-circle"></i>
-                <a href="https://web.microsoftstream.com/video/e0babae2-8b3b-488c-928a-256a28c94df3" target="_blank" class="addCheck">Lab 6 (Video)</a>
-            </p>
-            <p>
-                <i class="fas fa-file-download"></i>
-                <a href="materials/Dr/CA_S06.pdf" target="_blank" class="addCheck">Lab 6 (PDF)</a>
-            </p>
-        </div>
+      <button class="accordion">Week 8</button>
+      <div class="panel">
+        <p>
+          <i class="fas fa-play-circle"></i>
+          <a
+            href="https://web.microsoftstream.com/video/5734389f-9c85-4918-839c-7ef3fc2b554d"
+            target="_blank"
+            class="addCheck"
+            >Lecture 8 (Video)</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file-download"></i>
+          <a href="materials/Dr/CA_L08.pdf" target="_blank" class="addCheck"
+            >Lecture 8 (PDF)</a
+          >
+        </p>
+        <hr />
+        <p>
+          <i class="fas fa-play-circle"></i>
+          <a
+            href="https://web.microsoftstream.com/video/96955ab1-2357-4dd7-9bb3-d9e60c2627e0"
+            target="_blank"
+            class="addCheck"
+            >Lab 7 (Video)</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file-download"></i>
+          <a href="materials/Dr/CA_S07.pdf" target="_blank" class="addCheck"
+            >Lab 7 (PDF)</a
+          >
+        </p>
+      </div>
 
-        <button class="accordion">Week 8</button>
-        <div class="panel">
-            <p>
-                <i class="fas fa-play-circle"></i>
-                <a href="https://web.microsoftstream.com/video/5734389f-9c85-4918-839c-7ef3fc2b554d" target="_blank" class="addCheck">Lecture 8 (Video)</a>
-            </p>
-            <p>
-                <i class="fas fa-file-download"></i>
-                <a href="materials/Dr/CA_L08.pdf" target="_blank" class="addCheck">Lecture 8 (PDF)</a>
-            </p>
-            <hr>
-            <p>
-                <i class="fas fa-play-circle"></i>
-                <a href="https://web.microsoftstream.com/video/96955ab1-2357-4dd7-9bb3-d9e60c2627e0" target="_blank" class="addCheck">Lab 7 (Video)</a>
-            </p>
-            <p>
-                <i class="fas fa-file-download"></i>
-                <a href="materials/Dr/CA_S07.pdf" target="_blank" class="addCheck">Lab 7 (PDF)</a>
-            </p>
-        </div>
-
-        <button class="accordion">Week 9</button>
-        <div class="panel">
-            <p>
-                <i class="fas fa-play-circle"></i>
-                <a href="https://web.microsoftstream.com/video/ec423aed-0a33-4b9c-aac7-464b2037ec55" target="_blank" class="addCheck">Lecture 9 (Video)</a>
-            </p>
-            <p>
-                <i class="fas fa-file-download"></i>
-                <a href="materials/Dr/CA_L09.pdf" target="_blank" class="addCheck">Lecture 9 (PDF)</a>
-            </p>
-            <hr>
-            <p>
-                <i class="fas fa-play-circle"></i>
-                <a href="https://web.microsoftstream.com/video/6d7fef13-4bb0-4f5c-8490-08626900fc22" target="_blank" class="addCheck">Lab 8 (Video)</a>
-            </p>
-            <p>
-                <i class="fas fa-file-download"></i>
-                <a href="materials/Dr/CA_S08.pdf" target="_blank" class="addCheck">Lab 8 (PDF)</a>
-            </p>
-            <p>
-                <i class="fas fa-file-download"></i>
-                <a href="materials/Dr/Extras/CA_S08.rar" target="_blank" class="addCheck">Lab 8 - Extras (rar)</a>
-            </p>
-        </div>
-
+      <button class="accordion">Week 9</button>
+      <div class="panel">
+        <p>
+          <i class="fas fa-play-circle"></i>
+          <a
+            href="https://web.microsoftstream.com/video/ec423aed-0a33-4b9c-aac7-464b2037ec55"
+            target="_blank"
+            class="addCheck"
+            >Lecture 9 (Video)</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file-download"></i>
+          <a href="materials/Dr/CA_L09.pdf" target="_blank" class="addCheck"
+            >Lecture 9 (PDF)</a
+          >
+        </p>
+        <hr />
+        <p>
+          <i class="fas fa-play-circle"></i>
+          <a
+            href="https://web.microsoftstream.com/video/6d7fef13-4bb0-4f5c-8490-08626900fc22"
+            target="_blank"
+            class="addCheck"
+            >Lab 8 (Video)</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file-download"></i>
+          <a href="materials/Dr/CA_S08.pdf" target="_blank" class="addCheck"
+            >Lab 8 (PDF)</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file-download"></i>
+          <a
+            href="materials/Dr/Extras/CA_S08.rar"
+            target="_blank"
+            class="addCheck"
+            >Lab 8 - Extras (rar)</a
+          >
+        </p>
+      </div>
     </div>
 
     <!--Footer-->
     <footer>
-        Developed and maintained by
-        <a href="https://github.com/omarr45/" target="_blank">Omar AbdulRahman</a> - 2021
+      Developed and maintained by
+      <a href="https://omar45.com/" target="_blank">Omar AbdulRahman</a>
     </footer>
 
     <script src="scripts/accordion.js"></script>
     <script src="scripts/check.js"></script>
-
-</body>
-
+    <!-- Buy me a coffee widget -->
+    <script
+      data-name="BMC-Widget"
+      data-cfasync="false"
+      src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
+      data-id="omar45"
+      data-description="Support me on Buy me a coffee!"
+      data-message="Thanks for visiting, you can support me here"
+      data-color="#FFDD00"
+      data-position="Right"
+      data-x_margin="18"
+      data-y_margin="18"></script>
+  </body>
 </html>

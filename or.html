@@ -1,316 +1,401 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) [immediately after head tag]-->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-EKWFGLGKVR"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
 
-<head>
-    <meta charset="utf-8">
+      gtag('config', 'G-EKWFGLGKVR');
+    </script>
+    <!-- Google Ads [between head tags] -->
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8729859208925325"
+      crossorigin="anonymous"></script>
 
-    <script src="https://kit.fontawesome.com/e38234dfec.js" crossorigin="anonymous"></script>
+    <meta charset="utf-8" />
 
-    <script data-ad-client="ca-pub-8729859208925325" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script
+      src="https://kit.fontawesome.com/e38234dfec.js"
+      crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="styles/common.css">
-    <link rel="stylesheet" href="styles/commonCourse.css">
-    <link rel="icon" href="assets/favicon.png" sizes="any" type="image/png">
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/common.css" />
+    <link rel="stylesheet" href="styles/commonCourse.css" />
+    <link rel="icon" href="assets/favicon.png" sizes="any" type="image/png" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="og:title" property="og:title" content="FCIS 2023">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="og:title" property="og:title" content="Operations Research" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#0078E3" />
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LQ4C5TLEYJ"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'G-LQ4C5TLEYJ');
-    </script>
-
     <title>Operations Research</title>
-</head>
+  </head>
 
-<body>
-    <nav>
-        <div class="logo">
-            <a href="index.html" style="text-decoration: none; color: white;">
-              FCIS 2023
-            </a>
-        </div>
-        <input type="checkbox" id="click">
-        <label for="click" class="menu-btn">
-        <i class="fas fa-bars"></i>
-      </label>
-        <ul>
-            <li><a href="ds.html" title="Data Structures">Data Structures</a></li>
-            <li><a href="ai.html" title="Artificial Intelligence">Artificial Intelligence</a></li>
-            <li><a href="la.html" title="Linear Algebra">Linear Algebra</a></li>
-            <li><a href="ca.html" title="Computer Architecture">Computer Architecture</a></li>
-            <li><a href="or.html" class="active" title="Operations Research">Operations Research</a></li>
-        </ul>
-    </nav>
+  <body>
+    <header>
+      <a href="/">FCIS 2023 <sup>4th</sup></a>
+    </header>
 
     <div class="content">
-
-        <!-- <div class="alert">
-            <p>
-                ** Testing Ads **
-            </p>
-        </div> -->
-
-        <div class="hdrs">
-            <div class="course"> Operations Research </div>
-            <div class="prof">
-                <a href="mailto:doaaezat@cis.asu.edu.eg"> Dr. Doaa Ezzat </a>
-            </div>
+      <div class="hdrs">
+        <div class="course">Operations Research</div>
+        <div class="prof">
+          <a href="mailto:doaaezat@cis.asu.edu.eg"> Dr. Doaa Ezzat </a>
         </div>
+      </div>
 
-        <!-- <div class="alert arb red" dir="rtl">
-            <p>
-                متنساش الأسايمنت، آخرنا يوم 20/5
-            </p>
-        </div> -->
+      <div class="progress" id="progress">Progress :</div>
+      <div class="progressContainer">
+        <div class="progressBack" id="back"></div>
+      </div>
 
-        <!-- <div class="alert arb" dir="rtl">
-            <h4 class="ttle"> Dr. Radwa Reda&nbsp;-&nbsp;(11 May) </h4>
-            <p>
-                السلام عليكم يا شباب أولًا عيد سعيد علينا كلنا إن شاء الله <br> ثانيًا فيه اسيمنت نزل على Microsoft Team ولكن الناس ما تقلقش احنا مش بنرخم عليكم على العيد ولا حاجة لان ال deadline بتاعه يوم 20/5/2021 يعنى آخر الاسبوع اللى بعد العيد، عيدوا
-                براحتكم بس بعد العيد لازم تذاكروا و تحلوا الاسيمنت و تبعتوه ثالثا تسليم الاسيمنت هيكون online يعنى حلوا الاسيمنت عادى جدا على ورق و صوروه و ابعتوه على الايميل ده : operationalresearchg2@gmail.com , و لازم تراعوا التعليمات اللى هتمشوا عليها
-                و انتوا بتبعتوا الايميل و اللى المكتوبه مع الاسيمنت علشان مايحصلش اى مشاكل اثناء التصحيح و رصد الدجات "يعنى اللى مش هيلتزم بالتعليمات و ينسى يكتب اسمه و سكشنه مثلا ما يرجعش يقول درجتى فين؟! " و بالتوفيق لكم كلكم ان شاء الله
-            </p>
-            <p><b class="arb">
-                هتلاقي الأسايمنت  <a href="materials/Dr/Extras/OR_Assignment01.pdf" target="_blank">هنا</a>
-            </b></p>
-        </div> -->
+      <div class="exam">
+        <p>
+          <a
+            href="https://drive.google.com/drive/folders/18Tx76AwKu-nrgnf85bMksCg5GzeoCWbJ">
+            Revision & Previous Exam
+          </a>
+        </p>
+      </div>
 
-        <div class="progress" id="progress">Progress :</div>
-        <div class="progressContainer">
-            <div class="progressBack" id="back">
-            </div>
-        </div>
+      <button class="accordion fixed">Resources</button>
+      <div class="panel">
+        <p><i class="fas fa-user-friends"></i> Microsoft Teams Code: t021l7n</p>
+        <p>
+          <i class="fas fa-book"></i>
+          <a
+            href="https://drive.google.com/file/d/1e48hGZL0BDygG3qWueurpeWP8Uepsgoi/view?fbclid=IwAR0zxccqVwL_ETIu1yr7sDRuQxdpj4TpUim949S9VxGZyV8blI_cCPe1uvQ"
+            target="_blank">
+            Course Book (28 Mb)</a
+          >
+        </p>
+        <p>
+          <i class="fab fa-google-drive"></i>
+          <a
+            href="https://drive.google.com/drive/u/0/folders/1_uBXA3k3nbXo9GZXlawM_fZq21fnNM9W"
+            target="_blank"
+            >Google Drive Link</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-play-circle"></i>
+          <a
+            href="https://web.microsoftstream.com/channel/3cdf310a-fd69-4df3-8e9e-b746e0e50979"
+            target="_blank"
+            >Old Materials</a
+          >
+        </p>
+      </div>
 
-        <div class="exam">
-            <p>
-                <a href="https://drive.google.com/drive/folders/18Tx76AwKu-nrgnf85bMksCg5GzeoCWbJ"> Revision & Previous Exam </a>
-            </p>
-        </div>
+      <button class="accordion">Week 1</button>
+      <div class="panel">
+        <p>
+          <i class="fas fa-play-circle"></i>
+          <a
+            href="https://web.microsoftstream.com/video/2c8a6117-b04e-42e2-9f92-844b6c9c3bda"
+            target="_blank"
+            class="addCheck"
+            >Lecture 1 (Video)</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file-download"></i>
+          <a href="materials/Dr/OR_L01.pdf" target="_blank" class="addCheck"
+            >Lecture 1 (PDF)</a
+          >
+        </p>
+      </div>
 
-        <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
-        <!-- FirstAdTest -->
-        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8729859208925325" data-ad-slot="6565956232" data-ad-format="auto" data-full-width-responsive="true"></ins>
-        <script>
-            (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
+      <button class="accordion">Week 2</button>
+      <div class="panel">
+        <p>
+          <i class="fas fa-play-circle"></i>
+          <a
+            href="https://web.microsoftstream.com/video/239d12e9-1bef-4a22-8f49-8966977d7d33"
+            target="_blank"
+            class="addCheck"
+            >Lecture 2 (Video)</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file-download"></i>
+          <a href="materials/Dr/OR_L02.pdf" target="_blank" class="addCheck"
+            >Lecture 2 (PDF)</a
+          >
+        </p>
+        <hr />
+        <p>
+          <i class="fas fa-play-circle"></i>
+          <a
+            href="https://web.microsoftstream.com/video/36a5c2bb-6dc3-411b-a82b-44d106983e20"
+            target="_blank"
+            class="addCheck"
+            >Section 1 (Video)</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file-download"></i>
+          <a href="materials/Dr/OR_S01.pdf" target="_blank" class="addCheck"
+            >Section 1 (PDF)</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file-download"></i>
+          <a href="materials/Dr/OR_SH01.pdf" target="_blank" class="addCheck"
+            >Sheet 1 (PDF)</a
+          >
+        </p>
+        <hr />
+        <p>
+          <i class="fas fa-handshake fa-lg"></i>
+          <a
+            ><b><u>Students' Materials</u> &#8628;</b></a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file-download"></i>
+          <a
+            href="materials/Dr/OR_S01_DrSoad.pdf"
+            target="_blank"
+            class="addCheck"
+            >Section 1 - Dr. Soad (PDF)</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file-download"></i>
+          <a
+            href="materials/St/Kamal_OR_S01.pdf"
+            target="_blank"
+            class="addCheck">
+            Section 1 - Kamal Abo Elkhier (1.19 MB)
+          </a>
+        </p>
+      </div>
 
-        <button class="accordion fixed">Resources</button>
-        <div class="panel">
-            <p>
-                <i class="fas fa-user-friends"></i> Microsoft Teams Code: t021l7n
-            </p>
-            <p>
-                <i class="fas fa-book"></i>
-                <a href="https://drive.google.com/file/d/1e48hGZL0BDygG3qWueurpeWP8Uepsgoi/view?fbclid=IwAR0zxccqVwL_ETIu1yr7sDRuQxdpj4TpUim949S9VxGZyV8blI_cCPe1uvQ" target="_blank"> Course Book (28 Mb)</a>
-            </p>
-            <p>
-                <i class="fab fa-google-drive"></i>
-                <a href="https://drive.google.com/drive/u/0/folders/1_uBXA3k3nbXo9GZXlawM_fZq21fnNM9W" target="_blank">Google Drive Link</a>
-            </p>
-            <p>
-                <i class="fas fa-play-circle"></i>
-                <a href="https://web.microsoftstream.com/channel/3cdf310a-fd69-4df3-8e9e-b746e0e50979" target="_blank">Old Materials</a>
-            </p>
-        </div>
+      <button class="accordion">Week 3</button>
+      <div class="panel">
+        <p>
+          <i class="fas fa-play-circle"></i>
+          <a
+            href="https://web.microsoftstream.com/video/4fde8865-aff8-462a-9046-71cfe524ca4f"
+            target="_blank"
+            class="addCheck"
+            >Lecture 3 (Video)</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file-download"></i>
+          <a href="materials/Dr/OR_L03.pdf" target="_blank" class="addCheck"
+            >Lecture 3 (PDF)</a
+          >
+        </p>
+        <hr />
+        <p>
+          <i class="fas fa-play-circle"></i>
+          <a
+            href="https://web.microsoftstream.com/video/9b3cf7f5-da7f-44e2-83e4-6f1ea4d4cc33"
+            target="_blank"
+            class="addCheck"
+            >Section 2 (Video)</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file-download"></i>
+          <a href="materials/Dr/OR_S02.pdf" target="_blank" class="addCheck"
+            >Section 2 (PDF)</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file-download"></i>
+          <a href="materials/Dr/OR_SH02.pdf" target="_blank" class="addCheck"
+            >Sheet 2 (PDF)</a
+          >
+        </p>
+      </div>
 
-        <button class="accordion">Week 1</button>
-        <div class="panel">
-            <p>
-                <i class="fas fa-play-circle"></i>
-                <a href="https://web.microsoftstream.com/video/2c8a6117-b04e-42e2-9f92-844b6c9c3bda" target="_blank" class="addCheck">Lecture 1 (Video)</a>
-            </p>
-            <p>
-                <i class="fas fa-file-download"></i>
-                <a href="materials/Dr/OR_L01.pdf" target="_blank" class="addCheck">Lecture 1 (PDF)</a>
-            </p>
-        </div>
+      <button class="accordion">Week 4</button>
+      <div class="panel">
+        <p>
+          <i class="fas fa-play-circle"></i>
+          <a
+            href="https://web.microsoftstream.com/video/c41d6524-d9c8-4d2e-8da5-8c52eb168d3a"
+            target="_blank"
+            class="addCheck"
+            >Lecture 4 (Video)</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file-download"></i>
+          <a href="materials/Dr/OR_L04.pdf" target="_blank" class="addCheck"
+            >Lecture 4 (PDF)</a
+          >
+        </p>
+        <hr />
+        <p>
+          <i class="fas fa-play-circle"></i>
+          <a
+            href="https://web.microsoftstream.com/video/c0488e2c-838d-4d28-8ff5-b8d6649aac46"
+            target="_blank"
+            class="addCheck"
+            >Section 3 (Video)</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file-download"></i>
+          <a href="materials/Dr/OR_S03.pdf" target="_blank" class="addCheck"
+            >Section 3 (PDF)</a
+          >
+        </p>
+      </div>
 
-        <button class="accordion">Week 2</button>
-        <div class="panel">
-            <p>
-                <i class="fas fa-play-circle"></i>
-                <a href="https://web.microsoftstream.com/video/239d12e9-1bef-4a22-8f49-8966977d7d33" target="_blank" class="addCheck">Lecture 2 (Video)</a>
-            </p>
-            <p>
-                <i class="fas fa-file-download"></i>
-                <a href="materials/Dr/OR_L02.pdf" target="_blank" class="addCheck">Lecture 2 (PDF)</a>
-            </p>
-            <hr>
-            <p>
-                <i class="fas fa-play-circle"></i>
-                <a href="https://web.microsoftstream.com/video/36a5c2bb-6dc3-411b-a82b-44d106983e20" target="_blank" class="addCheck">Section 1 (Video)</a>
-            </p>
-            <p>
-                <i class="fas fa-file-download"></i>
-                <a href="materials/Dr/OR_S01.pdf" target="_blank" class="addCheck">Section 1 (PDF)</a>
-            </p>
-            <p>
-                <i class="fas fa-file-download"></i>
-                <a href="materials/Dr/OR_SH01.pdf" target="_blank" class="addCheck">Sheet 1 (PDF)</a>
-            </p>
-            <hr>
-            <p>
-                <i class="fas fa-handshake fa-lg"></i>
-                <a><b><u>Students' Materials</u> &#8628;</b></a>
-            </p>
-            <p>
-                <i class="fas fa-file-download"></i>
-                <a href="materials/Dr/OR_S01_DrSoad.pdf" target="_blank" class="addCheck">Section 1 - Dr. Soad (PDF)</a>
-            </p>
-            <p>
-                <i class="fas fa-file-download"></i>
-                <a href="materials/St/Kamal_OR_S01.pdf" target="_blank" class="addCheck"> Section 1 - Kamal Abo Elkhier (1.19 MB) </a>
-            </p>
-        </div>
+      <button class="accordion">Week 5</button>
+      <div class="panel">
+        <p>
+          <i class="fas fa-play-circle"></i>
+          <a
+            href="https://web.microsoftstream.com/video/29b0c63f-71b3-4450-9550-2baa6a8d955f"
+            target="_blank"
+            class="addCheck"
+            >Lecture 5 (Video)</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file-download"></i>
+          <a href="materials/Dr/OR_L05.pdf" target="_blank" class="addCheck"
+            >Lecture 5 (PDF)</a
+          >
+        </p>
+        <hr />
+        <p>
+          <i class="fas fa-play-circle"></i>
+          <a
+            href="https://web.microsoftstream.com/video/3a0e81b5-758d-41de-9323-d202237c056e"
+            target="_blank"
+            class="addCheck"
+            >Section 4 (Video)</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file-download"></i>
+          <a href="materials/Dr/OR_S04n5.pdf" target="_blank" class="addCheck"
+            >Section 4 & 5 (PDF)</a
+          >
+        </p>
+      </div>
 
-        <button class="accordion">Week 3</button>
-        <div class="panel">
-            <p>
-                <i class="fas fa-play-circle"></i>
-                <a href="https://web.microsoftstream.com/video/4fde8865-aff8-462a-9046-71cfe524ca4f" target="_blank" class="addCheck">Lecture 3 (Video)</a>
-            </p>
-            <p>
-                <i class="fas fa-file-download"></i>
-                <a href="materials/Dr/OR_L03.pdf" target="_blank" class="addCheck">Lecture 3 (PDF)</a>
-            </p>
-            <hr>
-            <p>
-                <i class="fas fa-play-circle"></i>
-                <a href="https://web.microsoftstream.com/video/9b3cf7f5-da7f-44e2-83e4-6f1ea4d4cc33" target="_blank" class="addCheck">Section 2 (Video)</a>
-            </p>
-            <p>
-                <i class="fas fa-file-download"></i>
-                <a href="materials/Dr/OR_S02.pdf" target="_blank" class="addCheck">Section 2 (PDF)</a>
-            </p>
-            <p>
-                <i class="fas fa-file-download"></i>
-                <a href="materials/Dr/OR_SH02.pdf" target="_blank" class="addCheck">Sheet 2 (PDF)</a>
-            </p>
-        </div>
+      <button class="accordion">Week 6</button>
+      <div class="panel">
+        <p>
+          <i class="fas fa-play-circle"></i>
+          <a
+            href="https://web.microsoftstream.com/video/6205b3b6-3191-46e5-936b-664d3562b36a"
+            target="_blank"
+            class="addCheck"
+            >Lecture 6 (Video)</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file-download"></i>
+          <a href="materials/Dr/OR_L06.pdf" target="_blank" class="addCheck"
+            >Lecture 6 (PDF)</a
+          >
+        </p>
+        <hr />
+        <p>
+          <i class="fas fa-file-download"></i> Section 5 is in the past week
+        </p>
+      </div>
 
+      <button class="accordion">Week 7</button>
+      <div class="panel">
+        <p>
+          <i class="fas fa-play-circle"></i>
+          <a
+            href="https://web.microsoftstream.com/video/ea7ccf7d-2d44-4e5a-95c1-3c44724b6174"
+            target="_blank"
+            class="addCheck"
+            >Lecture 7 (Video)</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file-download"></i>
+          <a href="materials/Dr/OR_L07.pdf" target="_blank" class="addCheck"
+            >Lecture 7 (PDF)</a
+          >
+        </p>
+        <hr />
+        <p>
+          <i class="fas fa-file-download"></i>
+          <a href="materials/Dr/OR_S06.pdf" target="_blank" class="addCheck"
+            >Section 6 (PDF)</a
+          >
+        </p>
+      </div>
 
-        <button class="accordion">Week 4</button>
-        <div class="panel">
-            <p>
-                <i class="fas fa-play-circle"></i>
-                <a href="https://web.microsoftstream.com/video/c41d6524-d9c8-4d2e-8da5-8c52eb168d3a" target="_blank" class="addCheck">Lecture 4 (Video)</a>
-            </p>
-            <p>
-                <i class="fas fa-file-download"></i>
-                <a href="materials/Dr/OR_L04.pdf" target="_blank" class="addCheck">Lecture 4 (PDF)</a>
-            </p>
-            <hr>
-            <p>
-                <i class="fas fa-play-circle"></i>
-                <a href="https://web.microsoftstream.com/video/c0488e2c-838d-4d28-8ff5-b8d6649aac46" target="_blank" class="addCheck">Section 3 (Video)</a>
-            </p>
-            <p>
-                <i class="fas fa-file-download"></i>
-                <a href="materials/Dr/OR_S03.pdf" target="_blank" class="addCheck">Section 3 (PDF)</a>
-            </p>
-        </div>
+      <button class="accordion">Week 8</button>
+      <div class="panel">
+        <p>
+          <i class="fas fa-play-circle"></i>
+          <a
+            href="https://web.microsoftstream.com/video/72660808-17f1-4065-bb2c-94ecf93d0c3f?App=msteamsBot"
+            target="_blank"
+            class="addCheck"
+            >Lecture 8 (Video)</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file-download"></i>
+          <a href="materials/Dr/OR_L08.pdf" target="_blank" class="addCheck"
+            >Lecture 8 (PDF)</a
+          >
+        </p>
+        <hr />
+        <p>
+          <i class="fas fa-file-download"></i>
+          <a href="materials/Dr/OR_S07.pdf" target="_blank" class="addCheck"
+            >Section 7 (PDF)</a
+          >
+        </p>
+      </div>
 
-        <button class="accordion">Week 5</button>
-        <div class="panel">
-            <p>
-                <i class="fas fa-play-circle"></i>
-                <a href="https://web.microsoftstream.com/video/29b0c63f-71b3-4450-9550-2baa6a8d955f" target="_blank" class="addCheck">Lecture 5 (Video)</a>
-            </p>
-            <p>
-                <i class="fas fa-file-download"></i>
-                <a href="materials/Dr/OR_L05.pdf" target="_blank" class="addCheck">Lecture 5 (PDF)</a>
-            </p>
-            <hr>
-            <p>
-                <i class="fas fa-play-circle"></i>
-                <a href="https://web.microsoftstream.com/video/3a0e81b5-758d-41de-9323-d202237c056e" target="_blank" class="addCheck">Section 4 (Video)</a>
-            </p>
-            <p>
-                <i class="fas fa-file-download"></i>
-                <a href="materials/Dr/OR_S04n5.pdf" target="_blank" class="addCheck">Section 4 & 5 (PDF)</a>
-            </p>
-        </div>
-
-        <button class="accordion">Week 6</button>
-        <div class="panel">
-            <p>
-                <i class="fas fa-play-circle"></i>
-                <a href="https://web.microsoftstream.com/video/6205b3b6-3191-46e5-936b-664d3562b36a" target="_blank" class="addCheck">Lecture 6 (Video)</a>
-            </p>
-            <p>
-                <i class="fas fa-file-download"></i>
-                <a href="materials/Dr/OR_L06.pdf" target="_blank" class="addCheck">Lecture 6 (PDF)</a>
-            </p>
-            <hr>
-            <p>
-                <i class="fas fa-file-download"></i> Section 5 is in the past week
-            </p>
-        </div>
-
-        <button class="accordion">Week 7</button>
-        <div class="panel">
-            <p>
-                <i class="fas fa-play-circle"></i>
-                <a href="https://web.microsoftstream.com/video/ea7ccf7d-2d44-4e5a-95c1-3c44724b6174" target="_blank" class="addCheck">Lecture 7 (Video)</a>
-            </p>
-            <p>
-                <i class="fas fa-file-download"></i>
-                <a href="materials/Dr/OR_L07.pdf" target="_blank" class="addCheck">Lecture 7 (PDF)</a>
-            </p>
-            <hr>
-            <p>
-                <i class="fas fa-file-download"></i>
-                <a href="materials/Dr/OR_S06.pdf" target="_blank" class="addCheck">Section 6 (PDF)</a>
-            </p>
-        </div>
-
-        <button class="accordion">Week 8</button>
-        <div class="panel">
-            <p>
-                <i class="fas fa-play-circle"></i>
-                <a href="https://web.microsoftstream.com/video/72660808-17f1-4065-bb2c-94ecf93d0c3f?App=msteamsBot" target="_blank" class="addCheck">Lecture 8 (Video)</a>
-            </p>
-            <p>
-                <i class="fas fa-file-download"></i>
-                <a href="materials/Dr/OR_L08.pdf" target="_blank" class="addCheck">Lecture 8 (PDF)</a>
-            </p>
-            <hr>
-            <p>
-                <i class="fas fa-file-download"></i>
-                <a href="materials/Dr/OR_S07.pdf" target="_blank" class="addCheck">Section 7 (PDF)</a>
-            </p>
-        </div>
-
-        <button class="accordion">Week 9</button>
-        <div class="panel">
-            <p>
-                <i class="fas fa-file-download"></i>
-                <a href="materials/Dr/OR_S08.pdf" target="_blank" class="addCheck">Section 8 (PDF)</a>
-            </p>
-        </div>
-
+      <button class="accordion">Week 9</button>
+      <div class="panel">
+        <p>
+          <i class="fas fa-file-download"></i>
+          <a href="materials/Dr/OR_S08.pdf" target="_blank" class="addCheck"
+            >Section 8 (PDF)</a
+          >
+        </p>
+      </div>
     </div>
 
     <!--Footer-->
     <footer>
-        Developed and maintained by
-        <a href="https://github.com/omarr45/" target="_blank">Omar AbdulRahman</a> - 2021
+      Developed and maintained by
+      <a href="https://omar45.com/" target="_blank">Omar AbdulRahman</a>
     </footer>
 
     <script src="scripts/accordion.js"></script>
     <script src="scripts/check.js"></script>
-
-</body>
-
+    <!-- Buy me a coffee widget -->
+    <script
+      data-name="BMC-Widget"
+      data-cfasync="false"
+      src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
+      data-id="omar45"
+      data-description="Support me on Buy me a coffee!"
+      data-message="Thanks for visiting, you can support me here"
+      data-color="#FFDD00"
+      data-position="Right"
+      data-x_margin="18"
+      data-y_margin="18"></script>
+  </body>
 </html>
